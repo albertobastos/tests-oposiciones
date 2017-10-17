@@ -1,0 +1,23 @@
+<GridLayout *ngIf="state === 1 || state === 2" columns="*" rows="auto,auto,*,auto">
+    <StackLayout col="0" row="0" orientation="horizontal">
+        <Label [text]="cabecera"></Label>
+    </StackLayout>
+    <StackLayout col="0" row="1">
+        <Label textWrap="true" [text]="question.pregunta"></Label>
+    </StackLayout>
+    <ListView col="0" row="2" [items]="question.respuestas">
+        <ng-template let-respuesta="item" let-idx="index">
+            <Label [ngClass]="{'right': idx === currentRightAnswer, 'wrong': idx === currentWrongAnswer}"textWrap="true" [text]="respuesta" (tap)="sendAnswer(idx)"></Label>
+        </ng-template>
+    </ListView>
+    <StackLayout col="0" row="3">
+        <Button *ngIf="state === 1" text="No contestar" (tap)="sendAnswer(-1)"></Button>
+        <Button *ngIf="state === 2" text="Siguiente" (tap)="advance()"></Button>
+    </StackLayout>
+</GridLayout>
+<StackLayout *ngIf="state == 3">
+    <Label [text]="'Respuestas correctas: ' + rightCount"></Label>
+    <Label [text]="'Respuestas incorrectas: ' + wrongCount"></Label>
+    <Label [text]="'Respuestas en blanco: ' + blankCount"></Label>
+    <Label [text]="'Nota final: ' + notaFinal"></Label>
+</StackLayout>

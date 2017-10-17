@@ -1,0 +1,8 @@
+Label.wrong { 
+    background-color: red; 
+    color: white;
+}
+Label.right { 
+    background-color: green;
+    color: white;
+}

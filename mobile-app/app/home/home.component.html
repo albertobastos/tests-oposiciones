@@ -1,0 +1,5 @@
+<StackLayout verticalAlignment="center" horizontalAligment="center">
+    <Label class="title" text="Cuestionarios"></Label>
+    <Button text="Comenzar" [nsRouterLink]="['/quiz']"></Button>
+    <Label text="({{questionsService.getTotalQuestions() | async}} preguntas disponibles)"></Label>
+</StackLayout>

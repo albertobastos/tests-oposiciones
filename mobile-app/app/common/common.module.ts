@@ -8,4 +8,4 @@ import { QuestionsService } from './services/questions.service';
     declarations: [],
     providers: [QuestionsService],
 })
-export class SharedModule { }
+export class CommonModule { }

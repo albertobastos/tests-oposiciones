@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page';
-import { Question } from '../shared/data/question';
-import { QuestionsService } from '../shared/services/questions.service';
+import { Question } from '../common/data/question';
+import { QuestionsService } from '../common/services/questions.service';
 
 @Component({
     selector: 'Quiz',
@@ -44,7 +44,7 @@ export class QuizComponent implements OnInit {
 
     sendAnswer(idx) {
         if(this.state === QuizState.QUESTION_IN_PROGRESS) { // ignore other clicks
-            this.currentRightAnswer = this.question.respuestaCorrecta;
+            this.currentRightAnswer = this.question.rightAnswerIndex;
             if(idx === -1) { // dejar en blanco
                 this.blankCount++;
                 this.currentWrongAnswer = null;
@@ -76,7 +76,7 @@ export class QuizComponent implements OnInit {
 
     buildCabecera(): string {
         if(this.question) {
-            return `Pregunta #${this.question.numeroOriginal} (${this.questionNumber} de ${this.questions.length})`;
+            return `Pregunta #${this.question.number} (${this.questionNumber} de ${this.questions.length})`;
         } else {
             return '';
         }

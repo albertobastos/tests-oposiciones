@@ -3,9 +3,9 @@
         <Label [text]="cabecera"></Label>
     </StackLayout>
     <StackLayout col="0" row="1">
-        <Label textWrap="true" [text]="question.pregunta"></Label>
+        <Label textWrap="true" [text]="question.question"></Label>
     </StackLayout>
-    <ListView col="0" row="2" [items]="question.respuestas">
+    <ListView col="0" row="2" [items]="question.answers">
         <ng-template let-respuesta="item" let-idx="index">
             <Label [ngClass]="{'right': idx === currentRightAnswer, 'wrong': idx === currentWrongAnswer}"textWrap="true" [text]="respuesta" (tap)="sendAnswer(idx)"></Label>
         </ng-template>

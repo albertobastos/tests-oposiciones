@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Page } from 'tns-core-modules/ui/page';
-import { QuestionsService } from '../shared/services/questions.service';
-import { Question } from '../shared/data/question';
+import { QuestionsService } from '../common/services/questions.service';
+import { Question } from '../common/data/question';
 
 @Component({
     selector: "Home",

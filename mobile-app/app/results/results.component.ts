@@ -14,7 +14,7 @@ export class ResultsComponent implements OnInit {
         protected page: Page,
         public quizService: QuizService
     ) {
-        page.actionBarHidden = true;
+        page.actionBarHidden = false;
     }
 
     ngOnInit() { }

@@ -20,7 +20,7 @@ export class QuizComponent implements OnInit {
         protected page: Page,
         protected quizService: QuizService
     ) {
-        page.actionBarHidden = true;
+        page.actionBarHidden = false;
     }
 
     ngOnInit() {

@@ -1,8 +1,12 @@
-Label.wrong { 
+.header Label {
+    margin-right: 20px;
+}
+
+.wrong-answer { 
     background-color: red; 
     color: white;
 }
-Label.right { 
+.right-answer { 
     background-color: green;
     color: white;
 }

@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page';
+import { RouterExtensions } from 'nativescript-angular/router';
+
 import { Question } from '../common/data/question';
-import { QuestionsService } from '../common/services/questions.service';
+import { QuizService, QuizAnswer } from '../common/services/quiz.service';
 
 @Component({
     selector: 'Quiz',
@@ -12,83 +14,59 @@ import { QuestionsService } from '../common/services/questions.service';
 
 export class QuizComponent implements OnInit {
 
-    questions: Question[];
-    question: Question; // pregunta actual
-    questionNumber: number; // número de pregunta actual
-    currentRightAnswer: number;
-    currentWrongAnswer: number;
-    rightCount: number;
-    wrongCount: number;
-    blankCount: number;
-    notaFinal: number;
     state: QuizState = QuizState.INITIALIZING;
-    cabecera: string;
+    lastAnswerIndex: number;
 
     constructor(
         protected page: Page,
-        protected questionsService: QuestionsService
+        protected routerExtensions: RouterExtensions,
+        protected quizService: QuizService
     ) {
     }
 
     ngOnInit() {
-        this.questionsService.getRandomQuestions(5).subscribe(r => {
-            this.questions = r;
-            this.questionNumber = 0;
-            this.question = null;
-            this.rightCount = 0;
-            this.wrongCount = 0;
-            this.blankCount = 0;
-            this.advance();
-        });
     }
 
-    sendAnswer(idx) {
-        if(this.state === QuizState.QUESTION_IN_PROGRESS) { // ignore other clicks
-            this.currentRightAnswer = this.question.rightAnswerIndex;
-            if(idx === -1) { // dejar en blanco
-                this.blankCount++;
-                this.currentWrongAnswer = null;
-            } else if(this.currentRightAnswer === idx) {
-                this.rightCount++;
-                this.currentWrongAnswer = null;
-            } else {
-                this.wrongCount++;
-                this.currentWrongAnswer = idx;
+    get isQuestionAnswered(): boolean {
+        return this.isQuizFinished || this.state === QuizState.QUESTION_ANSWERED;
+    }
+
+    get isQuizFinished(): boolean {
+        return this.state === QuizState.FINISHED;
+    }
+
+    get current(): Question {
+        return this.quizService.currentQuestion;
+    }
+
+    getAnswerClass(idx: number): string {
+        let clazz = '';
+        if(this.isQuestionAnswered) {
+            if(this.current.rightAnswerIndex === idx) {
+                clazz = 'right-answer';
+            } else if(this.lastAnswerIndex === idx) {
+                clazz = 'wrong-answer';
             }
-            
-            this.state = QuizState.QUESTION_ANSWERED;
         }
+        return clazz;
     }
 
-    advance() {
-        this.questionNumber++;
-        this.question = this.questions[this.questionNumber-1];
-        this.currentRightAnswer = null;
-        this.currentWrongAnswer = null;
-        if(this.question) {
+    sendAnswer(idx: number) {
+        this.lastAnswerIndex = idx;
+        this.quizService.answer(idx);
+        this.state = this.quizService.isLastQuestion() ? QuizState.FINISHED : QuizState.QUESTION_ANSWERED;
+    }
+
+    nextQuestion() {
+        if(!this.quizService.isLastQuestion()) {
+            this.quizService.nextQuestion();
             this.state = QuizState.QUESTION_IN_PROGRESS;
-        } else {
-            this.state = QuizState.FINISHED;
-            this.notaFinal = this.calcularNotaFinal();
-        }
-        this.cabecera = this.buildCabecera();
-    }
-
-    buildCabecera(): string {
-        if(this.question) {
-            return `Pregunta #${this.question.number} (${this.questionNumber} de ${this.questions.length})`;
-        } else {
-            return '';
+            this.lastAnswerIndex = null;
         }
     }
 
-    calcularNotaFinal(): number {
-        // cada respuesta incorrecta resta el 25% de una correcta
-
-        let puntosPorCorrecta = 10 / this.questions.length;
-        let puntosPorFallo = puntosPorCorrecta * 0.25;
-
-        return this.rightCount * puntosPorCorrecta - this.wrongCount * puntosPorFallo;
+    end() {
+        //this.routerExtensions.navigate(['/quizresults']);
     }
 
 }

@@ -1,5 +1,4 @@
 <StackLayout verticalAlignment="center" horizontalAligment="center">
-    <Label class="title" text="Cuestionarios"></Label>
-    <Button text="Comenzar" [nsRouterLink]="['/quiz']"></Button>
-    <Label text="({{questionsService.getTotalQuestions() | async}} preguntas disponibles)"></Label>
+    <Label class="title" text="OposTest"></Label>
+    <Button text="Comenzar" (tap)="startQuiz()"></Button>
 </StackLayout>

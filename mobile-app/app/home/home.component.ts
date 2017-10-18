@@ -1,7 +1,8 @@
 import { Component, OnInit } from "@angular/core";
+import { RouterExtensions } from 'nativescript-angular/router';
 import { Page } from 'tns-core-modules/ui/page';
-import { QuestionsService } from '../common/services/questions.service';
-import { Question } from '../common/data/question';
+
+import { QuizService } from '../common/services/quiz.service';
 
 @Component({
     selector: "Home",
@@ -13,11 +14,17 @@ export class HomeComponent implements OnInit {
 
     constructor(
         protected page: Page,
-        public questionsService: QuestionsService,
+        protected routerExtensions: RouterExtensions,
+        protected quizService: QuizService
     ) {
         page.actionBarHidden = true;
     }
 
     ngOnInit(): void {
+    }
+
+    startQuiz() {
+        this.quizService.initQuiz();
+        this.routerExtensions.navigate(['/quiz']);
     }
 }

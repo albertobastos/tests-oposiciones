@@ -48,7 +48,7 @@ public class Parser {
         Pattern pattern_blankLine = Pattern.compile("^(\\s)*$");
         Pattern pattern_rightAnswer = Pattern.compile("^(Respuestas:)?\\s*([0-9]+)\\.-\\s([ABCD])(\\s)*$");
         Pattern pattern_pageNumber = Pattern.compile("^Página\\s[0-9]+$");
-        Pattern pattern_sectionTitle = Pattern.compile("^([0-9]+)-.*$");
+        Pattern pattern_sectionTitle = Pattern.compile("^([0-9]+)-(.*)$");
 
         try(BufferedReader buffer = new BufferedReader(new StringReader(rawContents))) {
             buffer.lines().forEach(s -> {
@@ -89,7 +89,7 @@ public class Parser {
 
                 matcher = pattern_sectionTitle.matcher(s);
                 if(matcher.matches()) {
-                    currentSectionTitle[0] = s; // set the new current section
+                    currentSectionTitle[0] = matcher.group(2); // set the new current section
                     return;
                 }
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { RouterExtensions } from 'nativescript-angular/router';
 import { Page } from 'tns-core-modules/ui/page';
-
+import { BaseComponent } from '../common/base.component';
 import { QuizService } from '../common/services/quiz.service';
 
 @Component({
@@ -10,17 +10,18 @@ import { QuizService } from '../common/services/quiz.service';
     styleUrls: ["./home.component.css"],
     templateUrl: "./home.component.html"
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent extends BaseComponent implements OnInit {
 
     constructor(
         protected page: Page,
         protected routerExtensions: RouterExtensions,
         protected quizService: QuizService
     ) {
-        page.actionBarHidden = true;
+        super(page);
     }
 
-    ngOnInit(): void {
+    ngOnInit() {
+        //this.startQuiz(); // just devel
     }
 
     startQuiz() {

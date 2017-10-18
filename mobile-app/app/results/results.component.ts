@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page';
+import { BaseComponent } from '../common/base.component';
 import { QuizService } from '../common/services/quiz.service';
 
 @Component({
@@ -9,13 +10,11 @@ import { QuizService } from '../common/services/quiz.service';
     templateUrl: './results.component.html'
 })
 
-export class ResultsComponent implements OnInit {
+export class ResultsComponent extends BaseComponent {
     constructor(
         protected page: Page,
         public quizService: QuizService
     ) {
-        page.actionBarHidden = false;
+        super(page);
     }
-
-    ngOnInit() { }
 }

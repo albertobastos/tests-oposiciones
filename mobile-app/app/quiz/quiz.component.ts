@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page';
-
+import { BaseComponent } from '../common/base.component';
 import { Question } from '../common/data/question';
 import { QuizService, QuizAnswer } from '../common/services/quiz.service';
 
@@ -11,7 +11,7 @@ import { QuizService, QuizAnswer } from '../common/services/quiz.service';
     templateUrl: './quiz.component.html'
 })
 
-export class QuizComponent implements OnInit {
+export class QuizComponent extends BaseComponent {
 
     state: QuizState = QuizState.INITIALIZING;
     lastAnswerIndex: number;
@@ -20,10 +20,7 @@ export class QuizComponent implements OnInit {
         protected page: Page,
         protected quizService: QuizService
     ) {
-        page.actionBarHidden = false;
-    }
-
-    ngOnInit() {
+        super(page);
     }
 
     get isQuestionAnswered(): boolean {

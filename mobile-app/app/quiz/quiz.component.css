@@ -1,12 +1,34 @@
-.header Label {
-    margin-right: 20px;
+.question-text {
+    background-color: white;
+    border-radius: 10;
+    border-width: 3px;
+    border-color:  #845400;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.question-progress, .question-number {
+    color: #ccc;
+}
+
+.question-progress {
+    text-align: right;
+}
+
+.no-border {
+    border-width: 0px;
+}
+
+.answer {
+    border-bottom-width: 2px;
+    border-color: #845400;
+    padding: 20px;
 }
 
 .wrong-answer { 
-    background-color: red; 
-    color: white;
+    background-color: #FF9999; 
 }
 .right-answer { 
-    background-color: green;
-    color: white;
+    background-color: #99FF99;
 }

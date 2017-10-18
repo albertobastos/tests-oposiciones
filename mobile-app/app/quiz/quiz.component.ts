@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page';
-import { RouterExtensions } from 'nativescript-angular/router';
 
 import { Question } from '../common/data/question';
 import { QuizService, QuizAnswer } from '../common/services/quiz.service';
@@ -19,9 +18,9 @@ export class QuizComponent implements OnInit {
 
     constructor(
         protected page: Page,
-        protected routerExtensions: RouterExtensions,
         protected quizService: QuizService
     ) {
+        page.actionBarHidden = true;
     }
 
     ngOnInit() {
@@ -63,10 +62,6 @@ export class QuizComponent implements OnInit {
             this.state = QuizState.QUESTION_IN_PROGRESS;
             this.lastAnswerIndex = null;
         }
-    }
-
-    end() {
-        //this.routerExtensions.navigate(['/quizresults']);
     }
 
 }

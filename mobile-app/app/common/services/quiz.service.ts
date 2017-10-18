@@ -21,7 +21,7 @@ export class QuizService {
             this.configService.getQuestionsAmount(),
             this.configService.getSectionTitles()
         );
-        this._current = 1;
+        this._current = 0;
         this._answers = this._questions.map(q => QuizAnswer.UNANSWERED);
     }
 
@@ -73,7 +73,7 @@ export class QuizService {
         // 1 wrong answer ==> -25% right answer
         let markPerRightAnswer = 10 / this.totalQuestions;
         let markPerWrongAnswer = -0.25 * markPerRightAnswer;
-        return this.totalRightAnswers * markPerRightAnswer - this.totalWrongAnswers * markPerWrongAnswer;
+        return this.totalRightAnswers * markPerRightAnswer + this.totalWrongAnswers * markPerWrongAnswer;
     }
 
 }

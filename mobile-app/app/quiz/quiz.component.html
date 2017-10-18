@@ -1,7 +1,7 @@
 <GridLayout columns="*" rows="auto,auto,*,auto">
     <StackLayout class="header" col="0" row="0" orientation="horizontal">
         <Label [text]="current.number"></Label>
-        <Label [text]="current.sectionTitle"></Label>
+        <!--Label [text]="current.sectionTitle"></Label-->
         <Label [text]="quizService.currentQuestionNumber"></Label>
         <Label [text]="quizService.totalQuestions"></Label>
     </StackLayout>
@@ -16,7 +16,7 @@
         </ng-template>
     </ListView>
     <StackLayout col="0" row="3">
-        <Button *ngIf="isQuizFinished" text="Ver resultados" (tap)="end()"></Button>
+        <Button *ngIf="isQuizFinished" text="Ver resultados" [nsRouterLink]="['/results']"></Button>
         <Button *ngIf="!isQuestionAnswered" text="No contestar" (tap)="sendAnswer(-1)"></Button>
         <Button *ngIf="isQuestionAnswered && !isQuizFinished" text="Siguiente" (tap)="nextQuestion()"></Button>
     </StackLayout>

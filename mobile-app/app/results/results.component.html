@@ -1,0 +1,11 @@
+<StackLayout>
+    <Label text="Correctas"></Label>
+    <Label [text]="quizService.totalRightAnswers"></Label>
+    <Label text="Incorrectas"></Label>
+    <Label [text]="quizService.totalWrongAnswers"></Label>
+    <Label text="En blanco"></Label>
+    <Label [text]="quizService.totalBlankAnswers"></Label>
+    <Label text="Nota final"></Label>
+    <Label class="nota" [text]="quizService.getQuizMark()"></Label>
+    <Button text="Volver al inicio" [nsRouterLink]="['/home']" clearHistory="true"></Button>
+</StackLayout>

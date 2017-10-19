@@ -42,7 +42,7 @@
 }
 
 .answers Label {
-    border-top-width: 2px;
+    border-top-width: 3px;
     border-color: #845400;
     padding: 20px;
 }
@@ -55,6 +55,6 @@
 }
 
 .bottom-actions {
-    border-top-width: 4px;
+    border-top-width: 3px;
     border-color: #845400;
 }

@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
+import { AndroidApplication, AndroidActivityBackPressedEventData } from "application";
+import { isAndroid } from "platform";
+import * as application from "application";
 import { Page } from 'tns-core-modules/ui/page';
+import { RouterExtensions } from 'nativescript-angular/router';
+import * as dialogs from "ui/dialogs";
 import { BaseComponent } from '../common/base.component';
 import { Question } from '../common/data/question';
 import { QuizService, QuizAnswer } from '../common/services/quiz.service';
@@ -18,9 +23,17 @@ export class QuizComponent extends BaseComponent {
 
     constructor(
         protected page: Page,
+        protected routerExtensions: RouterExtensions,
         protected quizService: QuizService
     ) {
         super(page);
+        let backHandler = this.goBack.bind(this);
+        page.on('loaded', () => {
+            isAndroid && application.android.on(AndroidApplication.activityBackPressedEvent, backHandler);
+        });
+        page.on('unloaded', () => {
+            isAndroid && application.android.off(AndroidApplication.activityBackPressedEvent, backHandler);
+        });
     }
 
     get isQuestionAnswered(): boolean {
@@ -61,6 +74,17 @@ export class QuizComponent extends BaseComponent {
             this.state = QuizState.QUESTION_IN_PROGRESS;
             this.lastAnswerIndex = null;
         }
+    }
+
+    goBack(data: AndroidActivityBackPressedEventData) {
+        data.cancel = true;
+        dialogs.confirm(
+            'Todo tu progreso en el test actual se perderá. ¿Seguro que quieres salir?'
+        ).then(result => result && this.routerExtensions.back());
+    }
+
+    goToResults() {
+        this.routerExtensions.navigate(['/results'], {replaceUrl: true});
     }
 
     get stateText(): string {

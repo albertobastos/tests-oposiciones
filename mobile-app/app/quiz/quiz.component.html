@@ -13,7 +13,7 @@
         <Label *ngFor="let answer of current.answers;let i = index;" [ngClass]="getAnswerClass(i)" textWrap="true" [text]="answer" (tap)="sendAnswer(i)"></Label>
     </StackLayout>
     <StackLayout class="bottom-actions" col="0" row="4">
-        <Button *ngIf="isQuizFinished" text="Ver resultados" [nsRouterLink]="['/results']"></Button>
+        <Button *ngIf="isQuizFinished" text="Ver resultados" (tap)="goToResults()"></Button>
         <Button *ngIf="!isQuestionAnswered" text="No contestar" (tap)="sendAnswer(-1)"></Button>
         <Button *ngIf="isQuestionAnswered && !isQuizFinished" text="Siguiente" (tap)="nextQuestion()"></Button>
     </StackLayout>

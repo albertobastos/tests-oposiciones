@@ -13,7 +13,7 @@ export class ConfigService {
     }
 
     getQuestionsAmount(): number {
-        return this.getPropertyOrDefault('questionsAmount', 10);
+        return this.getPropertyOrDefault('questionsAmount', this.getAllQuestionsAmounts()[0]);
     }
 
     getSections(): string[] {
@@ -31,7 +31,7 @@ export class ConfigService {
     }
 
     getAllQuestionsAmounts(): number[] {
-        return [10, 20, 50, 100];
+        return [1, 20, 50, 100];
     }
 
     getAllSections(): string[] {

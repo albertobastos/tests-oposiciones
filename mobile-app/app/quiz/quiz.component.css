@@ -15,7 +15,6 @@
     background-color: white;
     border-width: 3px 0 3px 0;
     border-color:  #845400;
-    min-height: 400px;
     padding: 20px;
     margin-top: 20px;
 }
@@ -32,11 +31,20 @@
     border-width: 0px;
 }
 
-.answer {
-    border-bottom-width: 2px;
+.blank-wrap {
+    vertical-align: middle;
+    text-align: center;
+    color: #666;
+}
+
+.answers {
+    vertical-align: middle;
+}
+
+.answers Label {
+    border-top-width: 2px;
     border-color: #845400;
     padding: 20px;
-    min-height: 200px;
 }
 
 .wrong-answer { 
@@ -44,4 +52,9 @@
 }
 .right-answer { 
     background-color: #99FF99;
+}
+
+.bottom-actions {
+    border-top-width: 4px;
+    border-color: #845400;
 }

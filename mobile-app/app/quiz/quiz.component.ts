@@ -49,7 +49,7 @@ export class QuizComponent extends BaseComponent {
 
     sendAnswer(idx: number) {
         this.lastAnswerIndex = idx;
-        this.quizService.answer(idx);
+        let result: QuizAnswer = this.quizService.answer(idx);
         this.state = this.quizService.isLastQuestion() ? QuizState.FINISHED : QuizState.QUESTION_ANSWERED;
     }
 
@@ -58,6 +58,19 @@ export class QuizComponent extends BaseComponent {
             this.quizService.nextQuestion();
             this.state = QuizState.QUESTION_IN_PROGRESS;
             this.lastAnswerIndex = null;
+        }
+    }
+
+    get stateText(): string {
+        switch(this.quizService.currentAnswerResult) {
+            case QuizAnswer.UNANSWERED:
+                return 'Elija una respuesta...';
+            case QuizAnswer.RIGHT:
+                return 'Respuesta correcta';
+            case QuizAnswer.WRONG:
+                return 'Respuesta incorrecta';
+            case QuizAnswer.BLANK:
+                return '';
         }
     }
 

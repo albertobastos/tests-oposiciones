@@ -4,12 +4,14 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { HomeComponent } from './home/home.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { ResultsComponent } from './results/results.component';
+import { SettingsComponent } from './settings/settings.component';
 
 const routes: Routes = [
     { path: "", redirectTo: "/home", pathMatch: "full" },
     { path: "home", component: HomeComponent },
     { path: "quiz", component: QuizComponent },
-    { path: "results", component: ResultsComponent }
+    { path: "results", component: ResultsComponent },
+    { path: "settings", component: SettingsComponent }
 ];
 
 @NgModule({

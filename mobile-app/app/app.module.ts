@@ -9,6 +9,7 @@ import { AppComponent } from "./app.component";
 import { HomeComponent } from './home/home.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { ResultsComponent } from './results/results.component';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
     bootstrap: [
@@ -23,7 +24,8 @@ import { ResultsComponent } from './results/results.component';
         AppComponent,
         HomeComponent,
         QuizComponent,
-        ResultsComponent
+        ResultsComponent,
+        SettingsComponent
     ],
     providers: [
         { provide: NgModuleFactoryLoader, useClass: NSModuleFactoryLoader }

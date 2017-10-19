@@ -33,6 +33,10 @@ export class QuizService {
         return this._current+1;
     }
 
+    get currentAnswerResult(): QuizAnswer {
+        return this._answers[this._current];
+    }
+
     answer(answer: number): QuizAnswer {
         if(answer == -1) {
             this._answers[this._current] = QuizAnswer.BLANK;

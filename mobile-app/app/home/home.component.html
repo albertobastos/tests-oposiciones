@@ -1,4 +1,5 @@
 <StackLayout verticalAlignment="center" horizontalAligment="center">
     <Image src="res://logo"></Image>
-    <Button text="Comenzar test" (tap)="startQuiz()"></Button>
+    <Button text="Ajustes" [nsRouterLink]="['/settings']"></Button>
+    <Button text="Comenzar" (tap)="startQuiz()"></Button>
 </StackLayout>

@@ -1,3 +1,51 @@
-.nota {
+.summary {
+    vertical-align: middle;
+}
+
+WrapLayout {
+    background-color: white;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-color: #845400;
+}
+
+WrapLayout StackLayout {
+    padding: 10px;
+    text-align: center;
+}
+
+.top-left {
+    border-right-width: 1px;
+    border-color: #845400;
+}
+
+.top-right {
+    border-left-width: 1px;
+    border-color: #845400;
+}
+
+.bottom {
+    border-top-width: 1px;
+    border-color: #845400;
+}
+
+.number {
+    font-size: 30px;
+}
+
+.top-left .number {
+    color: green;
+}
+
+.top-center .number {
+    color: red;
+}
+
+.top-right .number {
+    color: gray;
+}
+
+.bottom .number {
+    font-size: 40px;
     font-weight: bold;
 }

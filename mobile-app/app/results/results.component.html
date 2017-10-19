@@ -1,11 +1,23 @@
-<StackLayout>
-    <Label text="Correctas"></Label>
-    <Label [text]="quizService.totalRightAnswers"></Label>
-    <Label text="Incorrectas"></Label>
-    <Label [text]="quizService.totalWrongAnswers"></Label>
-    <Label text="En blanco"></Label>
-    <Label [text]="quizService.totalBlankAnswers"></Label>
-    <Label text="Nota final"></Label>
-    <Label class="nota" [text]="quizService.getQuizMark()"></Label>
-    <Button text="Volver al inicio" [nsRouterLink]="['/home']" clearHistory="true"></Button>
-</StackLayout>
+<GridLayout columns="*" rows="*,auto">
+    <StackLayout class="summary">
+        <WrapLayout>
+            <StackLayout class="top-left" width="33%">
+                <Label text="Correctas"></Label>
+                <Label class="number" [text]="quizService.totalRightAnswers"></Label>
+            </StackLayout>
+            <StackLayout class="top-center" width="33%">
+                <Label text="Incorrectas"></Label>
+                <Label class="number" [text]="quizService.totalWrongAnswers"></Label>
+            </StackLayout>
+            <StackLayout class="top-right" width="33%">
+                <Label text="En blanco"></Label>
+                <Label class="number" [text]="quizService.totalBlankAnswers"></Label>
+            </StackLayout>
+            <StackLayout class="bottom" width="100%">
+                <Label text="Nota final"></Label>
+                <Label class="number" [text]="quizService.getQuizMark()"></Label>            
+            </StackLayout>
+        </WrapLayout>
+    </StackLayout>
+    <Button col="0" row="1" text="Volver al inicio" [nsRouterLink]="['/home']" clearHistory="true"></Button>
+</GridLayout>

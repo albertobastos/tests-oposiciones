@@ -16,4 +16,12 @@ export class ConfigService {
     getSectionTitles(): string[] {
         return this.questionService.getSectionTitles(); // TODO
     }
+
+    getAllowedQuestionsAmounts(): number[] {
+        return [10, 20, 50, 100];
+    }
+
+    getAllSectionTitles(): string[] {
+        return this.questionService.getSectionTitles();
+    }
 }

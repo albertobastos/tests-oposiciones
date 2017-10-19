@@ -21,7 +21,16 @@ export class HomeComponent extends BaseComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.startQuiz(); // just devel
+        //this.startQuiz(); // just devel
+        //if(1>0) return;        
+        this.quizService.initQuiz();
+        for(let i=0;i<this.quizService.totalQuestions;i++) {
+            this.quizService.answer(1);
+            if(!this.quizService.isLastQuestion()) {
+                this.quizService.nextQuestion();
+            }
+        }
+        this.routerExtensions.navigate(['/results']);
     }
 
     startQuiz() {

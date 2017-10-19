@@ -48,9 +48,11 @@ export class QuizComponent extends BaseComponent {
     }
 
     sendAnswer(idx: number) {
-        this.lastAnswerIndex = idx;
-        let result: QuizAnswer = this.quizService.answer(idx);
-        this.state = this.quizService.isLastQuestion() ? QuizState.FINISHED : QuizState.QUESTION_ANSWERED;
+        if(!this.isQuestionAnswered) { // avoid changing the answer!
+            this.lastAnswerIndex = idx;
+            let result: QuizAnswer = this.quizService.answer(idx);
+            this.state = this.quizService.isLastQuestion() ? QuizState.FINISHED : QuizState.QUESTION_ANSWERED;
+        }
     }
 
     nextQuestion() {

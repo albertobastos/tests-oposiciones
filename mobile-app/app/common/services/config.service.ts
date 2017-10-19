@@ -6,25 +6,31 @@ import { QuestionService } from './question.service';
 export class ConfigService {
 
     properties: {[key: string]: any};
-    questionsAmount: number;        // preguntas por test
-    sections: string[];             // secciones a incluir
 
     constructor(
         protected questionService: QuestionService
     ) {
-        this.questionsAmount = this.getPropertyOrDefault('questionsAmount', 10);
-        this.sections = this.getPropertyOrDefault('sections', this.getAllSections());
     }
 
     getQuestionsAmount(): number {
-        return 10; // TODO
+        return this.getPropertyOrDefault('questionsAmount', 10);
     }
 
     getSections(): string[] {
-        return this.questionService.getSectionTitles(); // TODO
+        return this.getPropertyOrDefault('sections', this.questionService.getSectionTitles());
     }
 
-    getAllowedQuestionsAmounts(): number[] {
+    setQuestionsAmount(amount: number) {
+        this.setProperty('questionsAmount', amount);
+    }
+
+    setSections(sections: string[]) {
+        if(sections && sections.length > 0) {
+            return this.setProperty('sections', sections);
+        }
+    }
+
+    getAllQuestionsAmounts(): number[] {
         return [10, 20, 50, 100];
     }
 

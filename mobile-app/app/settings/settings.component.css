@@ -1,0 +1,14 @@
+.setting {
+    padding: 20px;
+}
+.setting-title {
+    border-bottom-width: 2px;
+    border-color: gray;
+}
+.selected {
+    background-color: #845400;
+    color: white;
+}
+.setting-section {
+    padding: 10px 0 10px 0;
+}

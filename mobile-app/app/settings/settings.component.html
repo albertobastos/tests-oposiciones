@@ -1,6 +1,29 @@
 <StackLayout>
-    <Label text="Preguntas por test"></Label>
-    <Label [text]="questionsAmount"></Label>
-    <Label text="Secciones incluidas"></Label>
-    <Label *ngFor="let section of sections" [text]="section"></Label>
+    <StackLayout class="setting">
+        <Label class="setting-title" text="Preguntas por test"></Label>
+        <WrapLayout>
+            <Button 
+                *ngFor="let amount of configService.getAllQuestionsAmounts()" 
+                width="25%"
+                [text]="amount"
+                [ngClass]="{'selected': isAmount(amount)}"
+                (tap)="questionsAmount = amount"
+            ></Button>
+        </WrapLayout>
+    </StackLayout>
+    <StackLayout class="setting">
+        <Label class="setting-title" text="Secciones incluídas"></Label>
+        <GridLayout 
+            *ngFor="let section of configService.getAllSections()"
+            columns="auto,*" rows="auto" 
+            class="setting-section"
+            (tap)="toggleSection(section)"
+        >
+            <Label [text]="isSectionSelected(section) ? 'S ' : 'N '"></Label>
+            <Label col="1" row="0" textWrap="true" [text]="section"></Label>
+        </GridLayout>
+    </StackLayout>
+    <StackLayout class="actions">
+        <Button text="Aceptar" (tap)="accept()"></Button>
+    </StackLayout>
 </StackLayout>

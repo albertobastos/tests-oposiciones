@@ -19,7 +19,7 @@ export class QuizService {
     initQuiz() {
         this._questions = this.questionService.getRandomQuestions(
             this.configService.getQuestionsAmount(),
-            this.configService.getSectionTitles()
+            this.configService.getSections()
         );
         this._current = 0;
         this._answers = this._questions.map(q => QuizAnswer.UNANSWERED);

@@ -22,8 +22,8 @@ export class SettingsComponent extends BaseComponent {
         return this.configService.getQuestionsAmount();
     }
 
-    get sectionTitles(): string[] {
-        return this.configService.getSectionTitles();
+    get sections(): string[] {
+        return this.configService.getSections();
     }
 
     isAmount(amount: number): boolean {
@@ -31,7 +31,7 @@ export class SettingsComponent extends BaseComponent {
     }
 
     isSectionSelected(section: string): boolean {
-        return this.sectionTitles.indexOf(section) >= 0;
+        return this.sections.indexOf(section) >= 0;
     }
 
 }

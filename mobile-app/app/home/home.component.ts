@@ -21,8 +21,25 @@ export class HomeComponent extends BaseComponent implements OnInit {
     }
 
     ngOnInit() {
-        //this.startQuiz(); // just devel
-        //if(1>0) return;        
+        //this._devel_gotoQuiz();
+        //this._devel_gotoSettings();
+        //this._devel_gotoResults();
+    }
+
+    startQuiz() {
+        this.quizService.initQuiz();
+        this.routerExtensions.navigate(['/quiz']);
+    }
+
+    private _devel_gotoQuiz() {
+        this.startQuiz();
+    }
+
+    private _devel_gotoSettings() {
+        this.routerExtensions.navigate(['/settings']);
+    }
+
+    private _devel_gotoResults() {
         this.quizService.initQuiz();
         for(let i=0;i<this.quizService.totalQuestions;i++) {
             this.quizService.answer(1);
@@ -31,10 +48,5 @@ export class HomeComponent extends BaseComponent implements OnInit {
             }
         }
         this.routerExtensions.navigate(['/results']);
-    }
-
-    startQuiz() {
-        this.quizService.initQuiz();
-        this.routerExtensions.navigate(['/quiz']);
     }
 }

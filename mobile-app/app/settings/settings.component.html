@@ -1,3 +1,6 @@
 <StackLayout>
-    <Label text="Settings"></Label>
+    <Label text="Preguntas por test"></Label>
+    <Label [text]="questionsAmount"></Label>
+    <Label text="Secciones incluidas"></Label>
+    <Label *ngFor="let section of sections" [text]="section"></Label>
 </StackLayout>

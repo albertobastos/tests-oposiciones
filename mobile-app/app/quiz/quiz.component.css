@@ -1,11 +1,23 @@
+.question-info {
+    color: #666;
+}
+
+.question-info .number {
+    padding: 20px;
+}
+
+.question-info .count {
+    padding: 20px;
+    text-align: right;
+}
+
 .question-text {
     background-color: white;
-    border-radius: 10;
-    border-width: 3px;
+    border-width: 3px 0 3px 0;
     border-color:  #845400;
+    min-height: 400px;
     padding: 20px;
     margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .question-progress, .question-number {
@@ -24,6 +36,7 @@
     border-bottom-width: 2px;
     border-color: #845400;
     padding: 20px;
+    min-height: 200px;
 }
 
 .wrong-answer { 

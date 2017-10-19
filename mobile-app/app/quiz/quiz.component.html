@@ -1,13 +1,15 @@
-<GridLayout columns="*" rows="auto,*,auto">
-    <StackLayout class="question-text" col="0" row="0">
-        <Label class="question-number" [text]="'#' + current.number"></Label>
+<GridLayout columns="*" rows="auto,auto,*,auto">
+    <DockLayout class="question-info" col="0" row="0">
+        <Label class="number" dock="left" [text]="'#' + current.number"></Label>
+        <Label class="count" dock="right" [text]="quizService.currentQuestionNumber + '/' + quizService.totalQuestions"></Label>
+    </DockLayout>
+    <StackLayout class="question-text" col="0" row="1">
         <Label textWrap="true" [text]="current.question"></Label>
-        <Label class="question-progress" [text]="quizService.currentQuestionNumber + '/' + quizService.totalQuestions"></Label>
-    </StackLayout>
-    <StackLayout col="0" row="1">
-        <Label *ngFor="let answer of current.answers;let i = index;" class="answer" [ngClass]="getAnswerClass(i)" textWrap="true" [text]="answer" (tap)="sendAnswer(i)"></Label>
     </StackLayout>
     <StackLayout col="0" row="2">
+        <Label *ngFor="let answer of current.answers;let i = index;" class="answer" [ngClass]="getAnswerClass(i)" textWrap="true" [text]="answer" (tap)="sendAnswer(i)"></Label>
+    </StackLayout>
+    <StackLayout col="0" row="3">
         <Button *ngIf="isQuizFinished" text="Ver resultados" [nsRouterLink]="['/results']"></Button>
         <Button *ngIf="!isQuestionAnswered" text="No contestar" (tap)="sendAnswer(-1)"></Button>
         <Button *ngIf="isQuestionAnswered && !isQuizFinished" text="Siguiente" (tap)="nextQuestion()"></Button>

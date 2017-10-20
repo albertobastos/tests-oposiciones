@@ -6,15 +6,15 @@ import { QuestionService } from './question.service';
 @Injectable()
 export class ConfigService {
 
-    static SETTINGS_VERSION = "0.1";
+    static CONFIG_VERSION = "0.2";
 
     constructor(
         protected questionService: QuestionService
     ) {
         // si hacemos un cambio en los settings, los reseteamos
-        if(appSettings.getString("VERSION") !== ConfigService.SETTINGS_VERSION) {
+        if(appSettings.getString("VERSION") !== ConfigService.CONFIG_VERSION) {
             appSettings.clear();
-            appSettings.setString("VERSION", ConfigService.SETTINGS_VERSION);
+            appSettings.setString("VERSION", ConfigService.CONFIG_VERSION);
         }
     }
 

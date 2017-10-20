@@ -3950,377 +3950,377 @@
   "number" : "660",
   "sectionTitle" : "Título IV: Del Gobierno y la Administración",
   "question" : "En la disolución anticipada de las Cámaras, el Presidente del Gobierno:",
-  "answers" : [ "Traslada al Rey el acuerdo al efecto del Consejo de Ministros.", "No tiene competencia alguna.", "Efectúa una propuesta personal al Rey para ello.", "La acuerda, informando después al Rey. Generales" ],
+  "answers" : [ "Traslada al Rey el acuerdo al efecto del Consejo de Ministros.", "No tiene competencia alguna.", "Efectúa una propuesta personal al Rey para ello.", "La acuerda, informando después al Rey." ],
   "rightAnswerIndex" : 2
 }, {
   "number" : "661",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "La suplencia de un Ministro para el despacho ordinario de los asuntos de su competencia se determina por el:",
   "answers" : [ "Presidente del Gobierno.", "Vicepresidente Primero del Gobierno.", "Consejo de Ministros.", "Propio Ministro." ],
   "rightAnswerIndex" : 0
 }, {
   "number" : "662",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Disuelto el Congreso, o expirado su mandato, si se produjere alguna de las situaciones que dan lugar a cualquiera de los estados de alarma, excepción o sitio:",
   "answers" : [ "Las competencias del Congreso serán asumidas por el Gobierno de la Nación.", "Quedarán automáticamente convocadas las Cámaras, sin que hasta su constitución asuma organismo alguno sus competencias en esta materia.", "Todas las otras respuestas son falsas.", "Las competencias del Congreso serán asumidas por su Diputación Permanente." ],
   "rightAnswerIndex" : 3
 }, {
   "number" : "663",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "La disolución de las Cámaras será decretada:",
   "answers" : [ "Por el Rey.", "Por el Presidente del Congreso.", "Por el Presidente del Gobierno.", "Por el Gobierno de la Nación." ],
   "rightAnswerIndex" : 0
 }, {
   "number" : "664",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Actualmente, a salvo de la de Hacienda, las Dependencias periféricas que mantiene el Estado en las distintas Provincias se denominan genéricamente:",
   "answers" : [ "Servicios periféricos.", "Delegaciones Provinciales.", "Gerencias Territoriales.", "Secciones Provinciales." ],
   "rightAnswerIndex" : 0
 }, {
   "number" : "665",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Las Cámaras y sus Comisiones podrán recabar la información y ayuda que precisen:",
   "answers" : [ "A través de sus Presidentes y sólo del Gobierno y de sus Departamentos.", "La información y ayuda de las Comunidades Autónomas sólo podrá ser recabada por los Parlamentos autónomos y sus Comisiones.", "A través de la Mesa o los portavoces, del Gobierno, de sus Departamentos y de cualesquiera autoridades del Estado.", "La información y ayuda será recabada por los Presidentes, incluso de las Comunidades Autónomas." ],
   "rightAnswerIndex" : 3
 }, {
   "number" : "666",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Los signatarios de la moción de censura planteada, caso de ser rechazada la misma:",
   "answers" : [ "No podrán presentar otra durante la misma legislatura.", "No podrán presentar otra antes de que transcurran seis meses desde que fue presentada la primera.", "No podrán presentar otra durante el mismo periodo de sesiones.", "No podrán presentar otra antes de que transcurra un año desde que se haya votado el rechazo de la primera." ],
   "rightAnswerIndex" : 2
 }, {
   "number" : "667",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "La moción de censura no podrá ser votada hasta que, desde su presentación, hayan transcurrido:",
   "answers" : [ "Cinco días.", "Diez días.", "Tres días.", "Quince días." ],
   "rightAnswerIndex" : 0
 }, {
   "number" : "668",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Para que un Secretario General de un Ministerio sea considerado como órgano superior del mismo, ha de tener rango de:",
   "answers" : [ "Director General.", "Subsecretario.", "Lo es por sí mismo, sin necesitar ostentar otra categoría.", "Secretario de Estado." ],
   "rightAnswerIndex" : 1
 }, {
   "number" : "669",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "El ámbito territorial, duración y condiciones del estado de sitio serán determinados por:",
   "answers" : [ "Las Cortes Generales.", "El Congreso.", "El Rey.", "El Gobierno." ],
   "rightAnswerIndex" : 1
 }, {
   "number" : "670",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Los estados de alarma, excepción y sitio, así como las competencias y limitaciones correspondientes:",
   "answers" : [ "Están regulados plenamente en la Constitución, sin que sea preciso su desarrollo legal en disposición distinta.", "Podrán ser regulados por Ley Ordinaria, sólo en lo relativo a competencias.", "Se regularán, por mandado constitucional, mediante Ley Orgánica.", "Podrán ser reguladas incluso por Decreto Ley, en caso de extraordinaria y urgente necesidad." ],
   "rightAnswerIndex" : 2
 }, {
   "number" : "671",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Los miembros del Gobierno, por su parte:",
   "answers" : [ "Podrán solicitar que informen miembros de sus Departamentos ante las cámaras y sus Comisiones.", "No tienen facultad para hacerse oír en ellas.", "Tienen acceso limitado a las sesiones de las Cámaras y de sus Comisiones.", "Podrán obligar a las Comisiones, no a las Cámaras, a admitir que informen ante ellas funcionarios de sus Departamentos." ],
   "rightAnswerIndex" : 0
 }, {
   "number" : "672",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Los Secretarios Generales Técnicos tienen categoría de:",
   "answers" : [ "Subsecretario.", "Director General.", "Secretario de Estado.", "Jefe de Servicio." ],
   "rightAnswerIndex" : 1
 }, {
   "number" : "673",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Al ser órgano deliberante la Comisión de Asistencia al Subdelegado del Gobierno:",
   "answers" : [ "Decide en las materias en que intervenga.", "Sólo asesora al Subdelegado del Gobierno en la provincia.", "Debe estar integrado por funcionarios, en su condición de tales.", "Vincula al Subdelegado del Gobierno con sus informes." ],
   "rightAnswerIndex" : 1
 }, {
   "number" : "674",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "La propuesta de moción de censura deberá incluir:",
   "answers" : [ "Un candidato a Presidente del Gobierno.", "Al menos dos candidatos a Presidente del Gobierno, entre los que optará la Cámara.", "Candidatos a ocupar todos y cada uno de los puestos del Gobierno.", "Un programa de Gobierno." ],
   "rightAnswerIndex" : 0
 }, {
   "number" : "675",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "El Jefe Superior de un Departamento Ministerial, después del Ministro, en el supuesto de que no exista un Secretario de Estado, es el:",
   "answers" : [ "Director General.", "Subsecretario.", "Secretario General.", "Secretario General Técnico." ],
   "rightAnswerIndex" : 1
 }, {
   "number" : "676",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Declarado el estado de alarma:",
   "answers" : [ "Se dará cuenta al Congreso de los Diputados, sin cuya autorización no podrá ser prorrogado dicho plazo.", "Se dará cuenta al Rey, sin cuya autorización no podrá ser prorrogado el plazo inicial de duración.", "Se dará cuenta al Consejo de Ministros, sin cuya autorización no podrá ser prorrogado el plazo inicial.", "Se dará cuenta al Congreso de los Diputados, siendo improrrogable el plazo inicialmente marcado para la duración del estado de alarma." ],
   "rightAnswerIndex" : 0
 }, {
   "number" : "677",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Mientras estén declarados algunos de los estados de alarma, excepción y de sitio:",
   "answers" : [ "Sólo es posible disolver el Congreso en los casos previstos constitucionalmente.", "No se podrá proceder a la disolución del Congreso.", "Se podrá disolver el Congreso sólo estando vigente el estado de alarma, no cuando lo estén el de excepción 0 el de sitio.", "Sólo es posible disolver el Congreso cuando el ámbito territorial del estado declarado no sea superior a una Comunidad Autónoma." ],
   "rightAnswerIndex" : 1
 }, {
   "number" : "678",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "El nombramiento de los Delegados del Gobierno en las Comunidades Autónomas es competencia del:",
   "answers" : [ "Parlamento Autonómico.", "Presidente del Gobierno.", "Consejo de Gobierno.", "Consejo de Ministros." ],
   "rightAnswerIndex" : 3
 }, {
   "number" : "679",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "La confianza se entenderá otorgada cuando vote a favor de la misma:",
   "answers" : [ "La mayoría de dos tercios de los Diputados.", "La mayoría simple de los Diputados.", "La mayoría absoluta de los Diputados.", "La mayoría de tres quintos de los Diputados." ],
   "rightAnswerIndex" : 1
 }, {
   "number" : "680",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "El Decreto de la disolución contendrá:",
   "answers" : [ "Todas las otras respuestas son falsas.", "El compromiso de convocar elecciones en un plazo máximo de dos meses.", "La fecha exacta de las elecciones.", "El compromiso de que las nuevas Cámaras se constituyan en un plazo máximo de dos meses." ],
   "rightAnswerIndex" : 2
 }, {
   "number" : "681",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "En materia de Protección Civil, el Subdelegado del Gobierno en las Provincias:",
   "answers" : [ "Depende del órgano autonómico de que se trate.", "Tiene una actuación subsidiaria a la de los Alcaldes, como órganos que ostentan la jefatura directa en esta materia.", "Dirige y coordina los servicios de la misma en el ámbito provincial.", "No tiene competencia alguna." ],
   "rightAnswerIndex" : 2
 }, {
   "number" : "682",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "La declaración de los estados de alarma, excepción y sitio:",
   "answers" : [ "No modificará el principio de responsabilidad del Gobierno y de sus agentes reconocidos en la Constitución y en las leyes.", "Modificará el principio de responsabilidad del Gobierno y de sus agentes reconocidos en la Constitución y en las Leyes.", "Modificará el principio de responsabilidad del Gobierno, pero no el de sus agentes reconocidos en la Constitución y en las Leyes.", "No modificará el principio de responsabilidad del Gobierno, pero sí el de sus agentes reconocidos en la Constitución y en las Leyes." ],
   "rightAnswerIndex" : 0
 }, {
   "number" : "683",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "La presentación de mociones alternativas:",
   "answers" : [ "Está permitido, pudiendo efectuarse dentro de los dos primeros días del plazo previo a la votación de la moción primeramente formulada.", "Es un supuesto no permitido por nuestra Constitución.", "Está permitido, pudiendo efectuarse en cualquier momento anterior a la votación de la moción primeramente presentada.", "Está permitido, pudiendo efectuarse dentro de los cinco primeros días del plazo previo a la votación de la moción originalmente propuesta." ],
   "rightAnswerIndex" : 0
 }, {
   "number" : "684",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Las competencias relativas a producción normativa, asistencia jurídica y publicaciones, dentro de cada Ministerio, se atribuyen a los:",
   "answers" : [ "Secretarios Generales.", "Subsecretarios.", "Secretarios Generales Técnicos.", "Directores Generales." ],
   "rightAnswerIndex" : 2
 }, {
   "number" : "685",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Si el Congreso niega su confianza al Gobierno:",
   "answers" : [ "El Gobierno presentará su dimisión al Rey, procediéndose a continuación a la designación del Presidente del Gobierno en la forma prevista constitucionalmente.", "El Gobierno anunciará a la Cámara su disposición a admitir una moción de censura.", "El Gobierno la recabará seguidamente del Senado.", "El Gobierno presentará su dimisión al mismo Congreso, procediéndose a la designación por el Rey del Presidente del Gobierno en la forma prevenida por la Constitución." ],
   "rightAnswerIndex" : 0
 }, {
   "number" : "686",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Un Embajador español ante un país de la Unión Europea tiene el carácter de:",
   "answers" : [ "Secretario de Estado.", "Órgano directivo.", "Órgano superior.", "Ninguna respuesta es cierta." ],
   "rightAnswerIndex" : 1
 }, {
   "number" : "687",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "El Título Quinto de la Constitución finaliza en el artículo:",
   "answers" : [ "116.", "118.", "117.", "115." ],
   "rightAnswerIndex" : 0
 }, {
   "number" : "688",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Los Subdirectores Generales son nombrados por el:",
   "answers" : [ "Director General del que dependan.", "Ministro de Administraciones Públicas.", "Ministro o Secretario de Estado del que dependan.", "Consejo de Ministros." ],
   "rightAnswerIndex" : 2
 }, {
   "number" : "689",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Dicho nombramiento se efectúa a propuesta del:",
   "answers" : [ "Presidente de cada Comunidad Autónoma.", "Presidente del Parlamento Autonómico.", "Presidente del Gobierno.", "Ministro del Interior." ],
   "rightAnswerIndex" : 2
 }, {
   "number" : "690",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Para esta clase de debates, interpelaciones y preguntas, los Reglamentos establecerán un tiempo mínimo:",
   "answers" : [ "Quincenal.", "Diario.", "Semanal.", "Mensual. 691.-", "Ministros.", "Subsecretarios.", "Secretarios Generales Técnicos.", "Secretarios de Estado." ],
   "rightAnswerIndex" : 2
 }, {
   "number" : "692",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "El Título Quinto de la Constitución:",
   "answers" : [ "Está dividido en tres Capítulos.", "Está dividido en cuatro Capítulos.", "Carece de Capítulos.", "Está dividido en dos Capítulos." ],
   "rightAnswerIndex" : 2
 }, {
   "number" : "693",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "No tiene el carácter de órgano superior de un Departamento Ministerial un:",
   "answers" : [ "Secretario General con rango de Subsecretario.", "Director General.", "Subsecretario.", "Secretario de Estado." ],
   "rightAnswerIndex" : 1
 }, {
   "number" : "694",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Aprobar las propuestas de los estados de gastos de cada Ministerio es una competencia del/de la:",
   "answers" : [ "Ministro correspondiente.", "Director General competente por razón de la materia.", "Intervención General del Estado.", "Ministerio de Economía y Hacienda." ],
   "rightAnswerIndex" : 0
 }, {
   "number" : "695",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "La asistencia al Ministro en el control de eficacia del Ministerio es una competencia del:",
   "answers" : [ "Secretario de Estado.", "Subsecretario.", "Director General en su respectivo ámbito.", "Secretario General Técnico." ],
   "rightAnswerIndex" : 1
 }, {
   "number" : "696",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "El elemento organizativo básico en las estructuras orgánicas de la Administración General del Estado es el/la:",
   "answers" : [ "Unidad administrativa.", "Negociado.", "Servicio.", "Sección." ],
   "rightAnswerIndex" : 0
 }, {
   "number" : "697",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "La exigencia por parte del Congreso de los Diputados de la responsabilidad política del Gobierno se efectúa mediante la adopción de:",
   "answers" : [ "Una cuestión de confianza.", "De una moción de censura.", "De una cuestión de censura.", "De una interpelación de censura." ],
   "rightAnswerIndex" : 1
 }, {
   "number" : "698",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Si el Congreso adopta una moción de censura:",
   "answers" : [ "El Gobierno presentará su dimisión al Rey, sometiéndose el candidato incluido en la moción al Congreso, mediante una cuestión de confianza.", "Todas las otras respuestas son falsas.", "El Gobierno presentará su dimisión al Rey y al candidato incluido en aquella se entenderá investido de la confianza de la Cámara, nombrándole el Rey Presidente del Gobierno.", "El Gobierno presentará su dimisión al Rey, procediéndose a continuación a la designación del Presidente del Gobierno en la forma prevista constitucionalmente." ],
   "rightAnswerIndex" : 2
 }, {
   "number" : "699",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "El estado de excepción:",
   "answers" : [ "Será declarado por el Gobierno mediante decreto acordado en Consejo de Ministros, previa autorización del Congreso de los Diputados.", "Será declarado por la mayoría absoluta del Congreso de los Diputados.", "Será declarado por el Gobierno, mediante decreto acordado en Consejo de Ministros.", "Será declarado por la mayoría simple del Congreso de los Diputados." ],
   "rightAnswerIndex" : 0
 }, {
   "number" : "700",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Los Subdelegados del Gobierno en las provincias tienen nivel orgánico de:",
   "answers" : [ "Subdirector General.", "Secretario de Estado.", "Director General.", "Subsecretario." ],
   "rightAnswerIndex" : 0
 }, {
   "number" : "701",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Tal mecanismo para la exigencia de responsabilidad política al Gobierno por parte del Congreso, deberá ser adoptado por:",
   "answers" : [ "La mayoría de dos tercios de los Diputados.", "La mayoría simple de los Diputados.", "La mayoría absoluta de los Diputados.", "La mayoría de tres quintos de los Diputados." ],
   "rightAnswerIndex" : 2
 }, {
   "number" : "702",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "El estado de sitio será declarado:",
   "answers" : [ "Por la mayoría absoluta del Congreso de los Diputados, a propuesta exclusiva del Gobierno.", "Por el Gobierno, mediante decreto acordado en el Consejo de Ministros, previa autorización del Congreso de los Diputados.", "Por el Gobierno, mediante decreto acordado en el Consejo de Ministros.", "Por la mayoría absoluta del Congreso de los Diputados, a propuesta del Gobierno o del Rey." ],
   "rightAnswerIndex" : 0
 }, {
   "number" : "703",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "La propuesta de disolución:",
   "answers" : [ "Podrá presentarse en cualquier momento de la legislatura.", "No podrá presentarse cuando esté en trámite una cuestión de confianza.", "No podrá presentarse cuando esté en trámite una interpelación de las que de lugar a una moción.", "No podrá presentarse cuando esté en trámite una moción de censura." ],
   "rightAnswerIndex" : 3
 }, {
   "number" : "704",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "El estado de alarma:",
   "answers" : [ "Será declarado por el Presidente del Gobierno, previa deliberación del Consejo de Ministros.", "Será declarado por las Cortes Generales, mediante Ley Orgánica, por un plazo máximo de quince días.", "Será declarado por el Gobierno mediante Decreto acordado en Consejo de Ministros por un plazo máximo de quince días.", "Será declarado por el Rey, a instancia del Gobierno tras decreto acordado en Consejo de Ministros." ],
   "rightAnswerIndex" : 2
 }, {
   "number" : "705",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "La presencia de los miembros del Gobierno:",
   "answers" : [ "Sólo podrá ser reclamada por sus Comisiones.", "Podrá ser recabada tanto por el Presidente de cada Cámara como por los Presidentes de las Comisiones.", "Podrá ser recabada tanto por las Cámaras como por sus Comisiones.", "Sólo podrá ser recabada por las Cámaras." ],
   "rightAnswerIndex" : 2
 }, {
   "number" : "706",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "La regulación que en el Título Quinto se hace de los estados de alarma, excepción y sitio, se efectúa en el artículo:",
   "answers" : [ "115.", "113.", "116.", "114." ],
   "rightAnswerIndex" : 2
 }, {
   "number" : "707",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "El Subdelegado del Gobierno, en el ámbito provincial, ostenta la jefatura de:",
   "answers" : [ "Sólo el Cuerpo Nacional de Policía.", "Las Fuerzas y Cuerpos de Seguridad que radiquen en la Provincia.", "Las Fuerzas y Cuerpos de Seguridad del Estado, y las Fuerzas Armadas.", "Todas las Fuerzas y Cuerpos de Seguridad del Estado." ],
   "rightAnswerIndex" : 3
 }, {
   "number" : "708",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "El Título Quinto de la Constitución comienza en el artículo:",
   "answers" : [ "106.", "108.", "109.", "107." ],
   "rightAnswerIndex" : 1
 }, {
   "number" : "709",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "El Consejo de Ministros, en el nombramiento de Subdelegados del Gobierno en las provincias:",
   "answers" : [ "No interviene.", "Lo confiere.", "Delibera previamente.", "Lo propone." ],
   "rightAnswerIndex" : 0
 }, {
   "number" : "710",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "La resolución proclamando el estado de alarma:",
   "answers" : [ "Determinará el ámbito territorial a que se extienden los efectos de la declaración.", "Indicará el plazo mínimo de duración del mismo.", "Indicará el plazo máximo de duración del mismo.", "Determinará las zonas a las que no se extienden los efectos de la declaración." ],
   "rightAnswerIndex" : 0
 }, {
   "number" : "711",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Disueltas las Cámaras:",
   "answers" : [ "Podrá efectuarse otra, aunque no haya transcurrido un año desde la anterior, cuando hayan transcurrido dos meses desde la primera votación de investidura y ningún candidato haya obtenido la confianza del Congreso.", "No podrá efectuarse otra antes de que transcurra un año desde la anterior.", "No podrá efectuarse otra antes de que transcurran dos años desde la anterior.", "Podrá efectuarse otra en cualquier momento y por causas justificadas." ],
   "rightAnswerIndex" : 0
 }, {
   "number" : "712",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Estas Dependencias han ido desapareciendo a medida que:",
   "answers" : [ "Nada de lo expuesto es correcto, al permanecer intacta la Administración Periférica del Estado.", "Las Delegaciones del Gobierno en las Comunidades Autónomas han asumido sus competencias.", "Se ha reconvertido en Administración autonómica.", "Se han traspasado a las Comunidades Autónomas las competencias que venía ejerciendo el Estado a través de ellas." ],
   "rightAnswerIndex" : 3
 }, {
   "number" : "713",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "La moción de censura habrá de ser propuesta al menos por:",
   "answers" : [ "La décima parte de los Diputados.", "La tercera parte de los Diputados.", "La mitad de los Diputados.", "La quinta parte de los Diputados." ],
   "rightAnswerIndex" : 0
 }, {
   "number" : "714",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "La personalidad jurídica de la Administración General del Estado:",
   "answers" : [ "Es única para toda ella.", "Se atribuye a cada órgano con facultades decisorias.", "Se desdobla en la de la Administración Central y la Periférica.", "La ostentan separadamente los órganos que la representan." ],
   "rightAnswerIndex" : 0
 }, {
   "number" : "715",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Como órgano deliberante de colaboración inmediata con el Subdelegado del Gobierno se han creado las:",
   "answers" : [ "Delegaciones Provinciales de los Ministerios.", "Comisión de Asistencia al mismo.", "Secretarías Generales de los Gobiernos Civiles.", "Juntas Locales de Seguridad." ],
   "rightAnswerIndex" : 1
 }, {
   "number" : "716",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Una de las siguientes afirmaciones es cierta:",
   "answers" : [ "Las interpelaciones son realizadas por las Cámaras y las preguntas por las Comisiones, tanto al Gobierno como a cada uno de sus miembros.", "Sólo el Presidente del Gobierno está sometido a las interpelaciones y preguntas que se le formulen en las Cámaras.", "Las interpelaciones y preguntas al Gobierno ya sus miembros se efectuarán por las Cámaras y por sus Comisiones.", "Están sometidos a esas interpelaciones y preguntas tanto el Gobierno como cada uno de sus miembros." ],
   "rightAnswerIndex" : 3
 }, {
   "number" : "717",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Si cuando sea declarado el estado de alarma, el de excepción o el de sitio, no se estuviere en periodo de sesiones:",
   "answers" : [ "Quedará automáticamente convocada la Diputación Permanente.", "Todas las otras respuestas son falsas.", "Quedarán las Cámaras automáticamente convocadas.", "Las Cámaras ya no se constituirán hasta que el estado declarado sea dejado sin efecto." ],
   "rightAnswerIndex" : 2
 }, {
   "number" : "718",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Los Ministros son nombrados por el:",
   "answers" : [ "Congreso de los Diputados.", "Rey.", "Consejo de Ministros.", "Presidente del Gobierno." ],
   "rightAnswerIndex" : 1
 }, {
   "number" : "719",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "La autorización y proclamación del estado de excepción deberá determinar expresamente:",
   "answers" : [ "La mención de que los mismos se extienden al conjunto del territorio del Estado, o, como mínimo, al de una Comunidad Autónoma.", "Su duración, que no podrá exceder de quince días, prorrogables por otros quince con iguales requisitos.", "Los efectos del mismo.", "Su duración, que no podrá exceder de treinta días improrrogables." ],
   "rightAnswerIndex" : 2
 }, {
   "number" : "720",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "A los Delegados del Gobierno en las Comunidades Autónomas se refiere el siguiente artículo de la Constitución:",
   "answers" : [ "Art. 154.", "Art. 156.", "Art. 103.", "Art. 137." ],
   "rightAnswerIndex" : 0
 }, {
   "number" : "721",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Una de las siguientes afirmaciones no es verdadera. La cuestión de confianza se planteará ante el Congreso de los Diputados:",
   "answers" : [ "Su objeto podrá ser el propio programa de Gobierno.", "Tal planteamiento se efectuará previa deliberación del Consejo de Ministros.", "Por el Presidente del Gobierno.", "No podrá ser objeto de cuestión de confianza declaración alguna de política general." ],
   "rightAnswerIndex" : 3
 }, {
   "number" : "722",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "La responsabilidad del Gobierno por su gestión política ante el Congreso de los Diputados:",
   "answers" : [ "Es solidaria.", "Es genérica.", "Es única a través del Presidente del Gobierno.", "Es individual de cada uno de sus miembros." ],
   "rightAnswerIndex" : 0
 }, {
   "number" : "723",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes",
+  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "Una de las siguientes afirmaciones es cierta:",
   "answers" : [ "Toda moción podrá dar lugar a una interpelación en la que, quien la formula, manifiesta su posición.", "Toda interpelación podrá dar lugar a una moción, en la que la Cámara manifieste su posición.", "Toda pregunta podrá dar lugar a una interpelación.", "Determinadas interpelaciones darán lugar a una moción en la que la Cámara manifestará su opinión." ],
   "rightAnswerIndex" : 1

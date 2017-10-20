@@ -43,10 +43,11 @@ public class Parser {
         Map<String, Integer> rightAnswers = new HashMap<>();
         final String[] currentSectionTitle = new String[] { null };
 
+        final MatchType[] whatWasLast = new MatchType[] { null };
         Pattern pattern_questionText = Pattern.compile("^([0-9]+)\\.-\\s(.*)$");
         Pattern pattern_answer = Pattern.compile("^[abcd]\\)\\s(.*)$");
         Pattern pattern_blankLine = Pattern.compile("^(\\s)*$");
-        Pattern pattern_rightAnswer = Pattern.compile("^(Respuestas:)?\\s*([0-9]+)\\.-\\s([ABCD])(\\s)*$");
+        Pattern pattern_solution = Pattern.compile("^(Respuestas:)?\\s*([0-9]+)\\.-\\s([ABCD])(\\s)*$");
         Pattern pattern_pageNumber = Pattern.compile("^Página\\s[0-9]+$");
         Pattern pattern_sectionTitle = Pattern.compile("^([0-9]+)-(.*)$");
 
@@ -63,9 +64,10 @@ public class Parser {
 
                 Matcher matcher;
 
-                matcher = pattern_rightAnswer.matcher(s);
+                matcher = pattern_solution.matcher(s);
                 if(matcher.matches()) {
                     rightAnswers.put(matcher.group(2), answerLetterToIndex(matcher.group(3)));
+                    whatWasLast[0] = MatchType.SOLUTION;
                     return;
                 }
 
@@ -77,6 +79,7 @@ public class Parser {
                     q.setQuestion(matcher.group(2));
                     q.setAnswers(new ArrayList<String>());
                     res.add(q);
+                    whatWasLast[0] = MatchType.QUESTION;
                     return;
                 }
 
@@ -84,24 +87,32 @@ public class Parser {
                 if(matcher.matches()) { // a new answer starts
                     Question q = res.get(res.size()-1); // retrieve the current question...
                     q.getAnswers().add(matcher.group(1)); // ... and add the answer
+                    whatWasLast[0] = MatchType.ANSWER;
                     return;
                 }
 
                 matcher = pattern_sectionTitle.matcher(s);
                 if(matcher.matches()) {
                     currentSectionTitle[0] = matcher.group(2); // set the new current section
+                    whatWasLast[0] = MatchType.SECTION;
                     return;
                 }
 
                 // otherwise, is a follow-up from the previous line and we continue appending the current question or answer
                 Question q = res.get(res.size()-1);
-                if(q.getAnswers().isEmpty()) {
-                    // no answers yet, so that's more from the question text
-                    q.setQuestion(q.getQuestion() + " " + s);
-                } else {
-                    // already started adding answers, so that's more from the last answer retrieved
-                    String lastAnswer = q.getAnswers().remove(q.getAnswers().size()-1);
-                    q.getAnswers().add(lastAnswer + " " + s);
+                switch(whatWasLast[0]) {
+                    case QUESTION:
+                        q.setQuestion(q.getQuestion() + " " + s);
+                        break;
+                    case ANSWER:
+                        String lastAnswer = q.getAnswers().remove(q.getAnswers().size()-1);
+                        q.getAnswers().add(lastAnswer + " " + s);
+                        break;
+                    case SECTION:
+                        currentSectionTitle[0] = currentSectionTitle[0] + " " + s;
+                        break;
+                    default:
+                        throw new RuntimeException("Unknown scenario at line with contents: " + s);
                 }
             });
         }
@@ -128,6 +139,13 @@ public class Parser {
 
     private Integer answerLetterToIndex(String letter) {
         return ANSWER_INDEXES.indexOf(letter);
+    }
+
+    private enum MatchType {
+        QUESTION,
+        ANSWER,
+        SOLUTION,
+        SECTION
     }
 
 }

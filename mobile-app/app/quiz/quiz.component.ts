@@ -24,7 +24,7 @@ export class QuizComponent extends BaseComponent {
     constructor(
         protected page: Page,
         protected routerExtensions: RouterExtensions,
-        protected quizService: QuizService
+        public quizService: QuizService
     ) {
         super(page);
         // sobreescribimos el "Back" para pedirle confirmación, ya que hacerlo

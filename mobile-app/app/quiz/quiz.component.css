@@ -1,11 +1,9 @@
 .question-info {
     color: #666;
 }
-
 .question-info .number {
     padding: 20px;
 }
-
 .question-info .count {
     padding: 20px;
     text-align: right;
@@ -13,22 +11,11 @@
 
 .question-text {
     background-color: white;
+    opacity: 0.8;
     border-width: 3px 0 3px 0;
     border-color:  #845400;
     padding: 20px;
-    margin-top: 20px;
-}
-
-.question-progress, .question-number {
-    color: #ccc;
-}
-
-.question-progress {
-    text-align: right;
-}
-
-.no-border {
-    border-width: 0px;
+    margin-top: 0;
 }
 
 .blank-wrap {
@@ -37,24 +24,36 @@
     color: #666;
 }
 
-.answers {
-    vertical-align: middle;
+.answers Button {
+    color: #333;
+    text-align: left;
+    margin: 0;
+    text-transform: none;
+    opacity: 0.8;
 }
-
-.answers Label {
-    border-top-width: 3px;
-    border-color: #845400;
-    padding: 20px;
+.answers Button.wrong-answer { 
+    animation-name: answered-wrong;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
-
-.wrong-answer { 
-    background-color: #FF9999; 
+.answers Button.right-answer { 
+    animation-name: answered-right;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
-.right-answer { 
-    background-color: #99FF99;
+@keyframes answered-wrong {
+    from { background-color: white; }
+    to { background-color: #FF9999; }
+}
+@keyframes answered-right {
+    from { background-color: white; }
+    to { background-color: #99FF99; }
 }
 
 .bottom-actions {
     border-top-width: 3px;
     border-color: #845400;
+}
+.bottom-actions Button {
+    padding: 60px;
 }

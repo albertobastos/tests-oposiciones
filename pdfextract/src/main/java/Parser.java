@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 public class Parser {
 
     List<String> ANSWER_INDEXES = Arrays.asList("A", "B", "C", "D");
-    List<String> BANNED_QUESTIONS = Arrays.asList("712", "900", "944");
+    List<String> BANNED_QUESTIONS = Arrays.asList("712", "900", "944"); // questions that cannot be included for several reasons (out of context, repeated answers...)
 
     public static void main(String[] args) throws Exception {
         //String outPath = System.getProperty("user.home") + File.separator + "preguntas_" + new Date().getTime() + ".json";

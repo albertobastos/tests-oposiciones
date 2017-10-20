@@ -4253,12 +4253,6 @@
   "answers" : [ "Podrá efectuarse otra, aunque no haya transcurrido un año desde la anterior, cuando hayan transcurrido dos meses desde la primera votación de investidura y ningún candidato haya obtenido la confianza del Congreso.", "No podrá efectuarse otra antes de que transcurra un año desde la anterior.", "No podrá efectuarse otra antes de que transcurran dos años desde la anterior.", "Podrá efectuarse otra en cualquier momento y por causas justificadas." ],
   "rightAnswerIndex" : 0
 }, {
-  "number" : "712",
-  "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
-  "question" : "Estas Dependencias han ido desapareciendo a medida que:",
-  "answers" : [ "Nada de lo expuesto es correcto, al permanecer intacta la Administración Periférica del Estado.", "Las Delegaciones del Gobierno en las Comunidades Autónomas han asumido sus competencias.", "Se ha reconvertido en Administración autonómica.", "Se han traspasado a las Comunidades Autónomas las competencias que venía ejerciendo el Estado a través de ellas." ],
-  "rightAnswerIndex" : 3
-}, {
   "number" : "713",
   "sectionTitle" : "Título V: De las Relaciones entre el Gobierno y las Cortes Generales",
   "question" : "La moción de censura habrá de ser propuesta al menos por:",
@@ -5381,12 +5375,6 @@
   "answers" : [ "Art. 143 y art. 151.", "Art. 146 y 157.", "Art. 153 y 151.", "Art. 144 y art. 143." ],
   "rightAnswerIndex" : 0
 }, {
-  "number" : "900",
-  "sectionTitle" : "Título VIII: De la Organización Territorial del Estado",
-  "question" : "Las competencias exclusivas del Estado se recogen en la Constitución en su artículo:",
-  "answers" : [ "151", "150", "149", "151" ],
-  "rightAnswerIndex" : 2
-}, {
   "number" : "901",
   "sectionTitle" : "Título VIII: De la Organización Territorial del Estado",
   "question" : "En los Estatutos aprobados por el procedimiento al que nos venimos refiriendo, la organización institucional se basará en una Asamblea Legislativa:",
@@ -5644,12 +5632,6 @@
   "question" : "¿Qué artículo de la Constitución establece el derecho de autonomía de provincias y municipios?",
   "answers" : [ "El art.2.", "Ningún artículo de la Constitución establece ese principio.", "El art. 137.", "El art. 153.2." ],
   "rightAnswerIndex" : 2
-}, {
-  "number" : "944",
-  "sectionTitle" : "Título VIII: De la Organización Territorial del Estado",
-  "question" : "¿Qué artículo de la Constitución recoge las competencias exclusivas del Estado?",
-  "answers" : [ "151.", "150.", "151.", "149." ],
-  "rightAnswerIndex" : 3
 }, {
   "number" : "945",
   "sectionTitle" : "Título VIII: De la Organización Territorial del Estado",

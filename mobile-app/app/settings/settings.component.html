@@ -4,6 +4,7 @@
         <WrapLayout>
             <Button 
                 *ngFor="let amount of configService.getAllQuestionsAmounts()" 
+                class="setting-questions"
                 width="25%"
                 [text]="amount"
                 [ngClass]="{'selected': isAmount(amount)}"
@@ -13,7 +14,12 @@
     </StackLayout>
     <StackLayout class="setting">
         <Label class="setting-title" text="Secciones incluídas"></Label>
-        <GridLayout 
+        <ListView [items]="allSections" (itemTap)="toggleSection($event)">
+            <ng-template let-section="item">
+                <Label class="setting-section" [ngClass]="{'unselected': !isSectionSelected(section)}" textWrap="true" [text]="section"></Label>
+            </ng-template>
+        </ListView>
+        <!--GridLayout 
             *ngFor="let section of configService.getAllSections()"
             columns="auto,*" rows="auto" 
             class="setting-section"
@@ -21,7 +27,7 @@
         >
             <Label [text]="isSectionSelected(section) ? 'S ' : 'N '"></Label>
             <Label col="1" row="0" textWrap="true" [text]="section"></Label>
-        </GridLayout>
+        </GridLayout-->
     </StackLayout>
     <StackLayout class="actions">
         <Button text="Aceptar" (tap)="accept()"></Button>

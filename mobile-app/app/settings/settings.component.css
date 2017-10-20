@@ -1,14 +1,18 @@
 .setting {
-    padding: 20px;
+    padding: 10px;
 }
 .setting-title {
-    border-bottom-width: 2px;
-    border-color: gray;
+    text-align: center;
+    font-style: italic;
 }
-.selected {
-    background-color: #845400;
+
+.setting-questions.selected {
     color: white;
+    background-color: #845400;
+}
+.setting-section.unselected {
+    color: #CCC;
 }
 .setting-section {
-    padding: 10px 0 10px 0;
+    padding: 30px;
 }

@@ -12,12 +12,16 @@ import { ConfigService } from '../common/services/config.service';
 })
 
 export class SettingsComponent extends BaseComponent {
+
+    allSections: string[];
+
     constructor(
         protected page: Page,
         protected routerExtensions: RouterExtensions,
         public configService: ConfigService
     ) { 
         super(page);
+        this.allSections = this.configService.getAllSections();
     }
 
     get questionsAmount(): number {
@@ -40,7 +44,8 @@ export class SettingsComponent extends BaseComponent {
         return this.sections.indexOf(section) >= 0;
     }
 
-    toggleSection(section: string) {
+    toggleSection(event) {
+        let section = this.allSections[event.index];
         let tmp = this.sections.slice(); // create a copy!
         let idx = tmp.indexOf(section);
         if(idx >= 0) { // remove

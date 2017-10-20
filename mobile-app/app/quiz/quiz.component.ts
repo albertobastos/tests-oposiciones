@@ -27,6 +27,8 @@ export class QuizComponent extends BaseComponent {
         protected quizService: QuizService
     ) {
         super(page);
+        // sobreescribimos el "Back" para pedirle confirmación, ya que hacerlo
+        // implica perder todo el progreso del quiz actual
         let backHandler = this.goBack.bind(this);
         page.on('loaded', () => {
             isAndroid && application.android.on(AndroidApplication.activityBackPressedEvent, backHandler);
@@ -84,7 +86,7 @@ export class QuizComponent extends BaseComponent {
     }
 
     goToResults() {
-        this.routerExtensions.navigate(['/results'], {replaceUrl: true});
+        this.routerExtensions.navigate(['/results']); // el día que soporten replaceUrl, ya no necesitaremos implementar el goBack de la pantalla de resultados
     }
 
     get stateText(): string {

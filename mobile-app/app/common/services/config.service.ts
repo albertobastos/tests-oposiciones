@@ -1,50 +1,62 @@
 import { Injectable } from '@angular/core';
+import * as appSettings from 'application-settings';
 
 import { QuestionService } from './question.service';
 
 @Injectable()
 export class ConfigService {
 
-    properties: {[key: string]: any};
+    static SETTINGS_VERSION = "0.1";
 
     constructor(
         protected questionService: QuestionService
     ) {
+        // si hacemos un cambio en los settings, los reseteamos
+        if(appSettings.getString("VERSION") !== ConfigService.SETTINGS_VERSION) {
+            appSettings.clear();
+            appSettings.setString("VERSION", ConfigService.SETTINGS_VERSION);
+        }
     }
 
     getQuestionsAmount(): number {
-        return this.getPropertyOrDefault('questionsAmount', this.getAllQuestionsAmounts()[0]);
+        let str = this.getPropertyOrDefault('questionsAmount', ''+this.getAllQuestionsAmounts()[0]);
+        return Number(str);
     }
 
     getSections(): string[] {
-        return this.getPropertyOrDefault('sections', this.questionService.getSectionTitles());
+        let str = this.getPropertyOrDefault('sections');
+        if(str) {
+            return JSON.parse(str);
+        } else {
+            return this.questionService.getSectionTitles();
+        }
     }
 
     setQuestionsAmount(amount: number) {
-        this.setProperty('questionsAmount', amount);
+        this.setProperty('questionsAmount', ''+amount);
     }
 
     setSections(sections: string[]) {
         if(sections && sections.length > 0) {
-            return this.setProperty('sections', sections);
+            return this.setProperty('sections', JSON.stringify(sections));
         }
     }
 
     getAllQuestionsAmounts(): number[] {
-        return [1, 20, 50, 100];
+        return [10, 20, 50, 100];
     }
 
     getAllSections(): string[] {
         return this.questionService.getSectionTitles();
     }
 
-    private getPropertyOrDefault<T>(name: string, defaultValue: T): T {
-        this.properties = this.properties || {};
-        return this.properties[name] || defaultValue;
+    // lo guardamos todos como String, no es muy eficiente pero cumple el trabajo
+
+    private getPropertyOrDefault(name: string, defaultValue?: string): string {
+        return appSettings.getString(name) || defaultValue;
     }
 
-    private setProperty(name: string, value: any) {
-        this.properties = this.properties || {};
-        this.properties[name] = value;
+    private setProperty(name: string, value: string) {
+        appSettings.setString(name, value);
     }
 }

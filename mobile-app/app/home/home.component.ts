@@ -24,7 +24,7 @@ export class HomeComponent extends BaseComponent implements OnInit {
     ngOnInit() {
         //this._devel_gotoQuiz();
         //this._devel_gotoSettings();
-        this._devel_gotoResults();
+        //this._devel_gotoResults();
     }
 
     startQuiz() {

@@ -4,6 +4,6 @@ export class BaseComponent {
     constructor(
         protected page: Page
     ) {
-        page.actionBarHidden = true;
+        //page.actionBarHidden = true;
     }
 }

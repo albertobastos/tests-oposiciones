@@ -1,3 +1,6 @@
+<ActionBar title="Test">
+    <NavigationButton text="Salir" android.systemIcon="ic_menu_back" (tap)="goBack(null)"></NavigationButton>
+</ActionBar>
 <GridLayout columns="*" rows="auto,auto,*,auto">
     <DockLayout class="question-info" col="0" row="0">
         <Label class="number" dock="left" [text]="'#' + current.number"></Label>

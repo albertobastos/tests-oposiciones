@@ -1,35 +1,39 @@
+<ActionBar title="Ajustes">
+    <NavigationButton text="Volver" android.systemIcon="ic_menu_back" (tap)="routerExtensions.goBack()"></NavigationButton>
+</ActionBar>
 <StackLayout>
-    <StackLayout class="setting">
-        <Label class="setting-title" text="Preguntas por test"></Label>
-        <WrapLayout>
-            <Button 
-                *ngFor="let amount of configService.getAllQuestionsAmounts()" 
-                class="setting-questions"
-                width="25%"
-                [text]="amount"
-                [ngClass]="{'selected': isAmount(amount)}"
-                (tap)="questionsAmount = amount"
-            ></Button>
-        </WrapLayout>
-    </StackLayout>
-    <StackLayout class="setting">
-        <Label class="setting-title" text="Secciones incluídas"></Label>
-        <ListView [items]="allSections" (itemTap)="toggleSection($event)">
-            <ng-template let-section="item">
-                <Label class="setting-section" [ngClass]="{'unselected': !isSectionSelected(section)}" textWrap="true" [text]="section"></Label>
-            </ng-template>
-        </ListView>
-        <!--GridLayout 
-            *ngFor="let section of configService.getAllSections()"
-            columns="auto,*" rows="auto" 
-            class="setting-section"
-            (tap)="toggleSection(section)"
-        >
-            <Label [text]="isSectionSelected(section) ? 'S ' : 'N '"></Label>
-            <Label col="1" row="0" textWrap="true" [text]="section"></Label>
-        </GridLayout-->
-    </StackLayout>
-    <StackLayout class="actions">
-        <Button text="Aceptar" (tap)="accept()"></Button>
+    <StackLayout>
+        <StackLayout class="setting">
+            <Label class="setting-title" text="Preguntas por test"></Label>
+            <WrapLayout>
+                <Button 
+                    *ngFor="let amount of configService.getAllQuestionsAmounts()" 
+                    class="setting-questions"
+                    width="25%"
+                    [text]="amount"
+                    [ngClass]="{'selected': isAmount(amount)}"
+                    (tap)="questionsAmount = amount"
+                ></Button>
+            </WrapLayout>
+        </StackLayout>
+        <StackLayout class="setting">
+            <Label class="setting-title" text="Secciones incluídas"></Label>
+            <ListView [items]="allSections" (itemTap)="toggleSection($event)">
+                <ng-template let-section="item">
+                    <GridLayout class="setting-section" columns="auto,*" rows="auto">
+                        <Image
+                            col="0"
+                            [src]="isSectionSelected(section) ? 'res://checkon' : 'res://checkoff'"
+                        ></Image>
+                        <Label 
+                            col="1"
+                            [ngClass]="{'unselected': !isSectionSelected(section)}" 
+                            textWrap="true"
+                            [text]="section"
+                        ></Label>
+                    </GridLayout>
+                </ng-template>
+            </ListView>
+        </StackLayout>
     </StackLayout>
 </StackLayout>

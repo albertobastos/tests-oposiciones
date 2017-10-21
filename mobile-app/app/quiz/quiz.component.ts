@@ -79,7 +79,7 @@ export class QuizComponent extends BaseComponent {
     }
 
     goBack(data: AndroidActivityBackPressedEventData) {
-        data.cancel = true;
+        data && (data.cancel = true);
         dialogs.confirm(
             'Todo tu progreso en el test actual se perderá. ¿Seguro que quieres salir?'
         ).then(result => result && this.routerExtensions.back());

@@ -17,7 +17,7 @@ export class SettingsComponent extends BaseComponent {
 
     constructor(
         protected page: Page,
-        protected routerExtensions: RouterExtensions,
+        public routerExtensions: RouterExtensions,
         public configService: ConfigService
     ) { 
         super(page);
@@ -54,10 +54,6 @@ export class SettingsComponent extends BaseComponent {
             tmp.push(section);
         }
         this.configService.setSections(tmp);
-    }
-
-    accept() {
-        this.routerExtensions.navigate(['/home']);
     }
 
 }

@@ -15,8 +15,12 @@ Page {
     background-image: url("res://background");
     background-repeat: no-repeat;
     background-size:100% 100%;
-    padding: 80px 0 0 0;
     color: #333;
+}
+
+ActionBar {
+    color: white;
+    background-color: #845400;
 }
 
 Button {

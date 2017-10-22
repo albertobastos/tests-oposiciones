@@ -25,6 +25,7 @@ export class HomeComponent extends BaseComponent implements OnInit {
         //this._devel_gotoQuiz();
         //this._devel_gotoSettings();
         //this._devel_gotoResults();
+        //this._devel_gotoAbout();
     }
 
     startQuiz() {
@@ -49,5 +50,9 @@ export class HomeComponent extends BaseComponent implements OnInit {
             }
         }
         this.routerExtensions.navigate(['/results']);
+    }
+
+    private _devel_gotoAbout() {
+        this.routerExtensions.navigate(['/about']);
     }
 }

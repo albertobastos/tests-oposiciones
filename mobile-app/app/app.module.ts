@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { ResultsComponent } from './results/results.component';
 import { SettingsComponent } from './settings/settings.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
     bootstrap: [
@@ -25,7 +26,8 @@ import { SettingsComponent } from './settings/settings.component';
         HomeComponent,
         QuizComponent,
         ResultsComponent,
-        SettingsComponent
+        SettingsComponent,
+        AboutComponent
     ],
     providers: [
         { provide: NgModuleFactoryLoader, useClass: NSModuleFactoryLoader }

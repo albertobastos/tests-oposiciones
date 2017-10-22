@@ -1,6 +1,6 @@
 Questions parsed from PDF available at http://tublogdeoposiciones.com/2014/09/24/1600-preguntas-sobre-la-constitucion-espanola/
 Logo built with http://designapp.io
-Info icon downloaded from https://www.flaticon.com/packs/web-interface-icons
+Info icon downloaded from https://www.flaticon.com/free-icon/information_157933
 Background image downloaded from https://www.pexels.com/photo/black-pen-on-white-book-page-159621/
 
 Source code at https://gitlab.com/abastos/opostest

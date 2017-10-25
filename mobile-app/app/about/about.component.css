@@ -1,0 +1,15 @@
+Label {
+    margin: 20px;
+    padding: 20px;
+}
+Label.copyright {
+    color: #666;
+}
+Label.credit {
+    border-width: 2px;
+    border-color: #845400;
+}
+.link {
+    color: #845400;
+    font-weight: bold;
+}

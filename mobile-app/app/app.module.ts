@@ -1,5 +1,6 @@
 import { NgModule, NgModuleFactoryLoader, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
+import { NgShadowModule } from 'nativescript-ng-shadow';
 import { NSModuleFactoryLoader } from "nativescript-angular/router";
 
 import { CommonModule } from "./common/common.module";
@@ -18,6 +19,7 @@ import { AboutComponent } from './about/about.component';
     ],
     imports: [
         NativeScriptModule,
+        NgShadowModule,
         AppRoutingModule,
         CommonModule
     ],

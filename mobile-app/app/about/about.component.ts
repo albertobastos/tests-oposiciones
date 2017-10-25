@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page';
+import * as utils from 'tns-core-modules/utils/utils'
 import { RouterExtensions } from 'nativescript-angular/router';
 import { BaseComponent } from '../common/base.component';
 
@@ -16,5 +17,9 @@ export class AboutComponent extends BaseComponent {
         public routerExtensions: RouterExtensions
     ) {
         super(page);
+    }
+
+    url(link: string) {
+        utils.openUrl(link);
     }
 }

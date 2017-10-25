@@ -1,6 +1,47 @@
 <ActionBar title="Acerca de...">
     <NavigationButton text="Volver" android.systemIcon="ic_menu_back" (tap)="routerExtensions.back()"></NavigationButton>
 </ActionBar>
-<StackLayout>
-    <Label text="En construcción..."></Label>
-</StackLayout>
+<ScrollView>
+    <StackLayout>
+        <Label class="info" textWrap="true" 
+            text="Esta aplicación te permite realizar exámenes sobre la Constitución Española con preguntas escogidas al azar de entre una colección de más de 1600 opciones. Modifica los ajustes de la aplicación para escoger cuántas preguntas quieres incluir por test y qué apartados de la Constitución quieres incluir."
+        ></Label>
+        <Label class="info" textWrap="true" 
+            text="Tras completar un examen la aplicación te informará de tus resultados y la nota final. La nota final está ponderada sobre 10 y tiene en cuenta que cada respuesta incorrecta restará el 25% de una respuesta correcta. Dicho de otro modo, cada cuatro fallos anulan un acierto."
+        ></Label>
+
+    <Label class="credit" textWrap="true" shadow="2" (tap)="url('http://tublogdeoposiciones.com/2014/09/24/1600-preguntas-sobre-la-constitucion-espanola/')">
+            <FormattedString>
+                <Span text="La lista de preguntas procede de un documento PDF en "></Span>
+                <Span class="link" text="tublogdeoposiciones.com"></Span>
+                <Span text="."></Span>
+            </FormattedString>
+        </Label>
+
+        <Label class="credit" textWrap="true" shadow="2" (tap)="url('https://www.pexels.com/photo/black-pen-on-white-book-page-159621/')">
+            <FormattedString>
+                <Span text="La imagen de fondo ha sido obtenida de "></Span>
+                <Span class="link" text="pexels.com"></Span>
+                <Span text="."></Span>
+            </FormattedString>
+        </Label>
+
+        <Label class="credit" textWrap="true" shadow="2" (tap)="url('http://designapp.io')">
+            <FormattedString>
+                <Span text="El logotipo ha sido diseñado utilizando la aplicación web "></Span>
+                <Span class="link" text="designapp.io"></Span>
+                <Span text="."></Span>
+            </FormattedString>                
+        </Label>
+
+        <Label class="credit" textWrap="true" shadow="2" (tap)="url('https://www.flaticon.com/free-icon/information_157933')">
+            <FormattedString>
+                <Span text="El icono de información se encuentra disponible en "></Span>
+                <Span class="link" text="flaticon.com"></Span>
+                <Span text="."></Span>
+            </FormattedString>                
+        </Label>
+
+        <Label class="info copyright" textWrap="true" text="Desarrollado por Alberto Bastos. Octubre 2017."></Label>
+    </StackLayout>
+</ScrollView>

@@ -1,0 +1,13 @@
+android {
+            defaultConfig {
+                applicationId = "info.albertobastos.mobile.TestsConstitucion"
+
+                if (false) {
+                    minSdkVersion = false
+                }
+
+                if (false) {
+                    targetSdkVersion = false
+                }
+            }
+        }

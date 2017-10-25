@@ -8,7 +8,7 @@
 android {  
   defaultConfig {  
     generatedDensities = []
-    applicationId = "info.albertobastos.OposTest"  
+    applicationId = "info.albertobastos.mobile.TestsConstitucion"
   }  
   aaptOptions {  
     additionalParameters "--no-version-vectors"  

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { AndroidApplication, AndroidActivityBackPressedEventData } from "application";
 import { isAndroid } from "platform";
 import * as application from "application";
@@ -11,7 +11,8 @@ import { QuizService } from '../common/services/quiz.service';
     selector: 'results',
     moduleId: module.id,
     styleUrls: ['./results.component.css'],
-    templateUrl: './results.component.html'
+    templateUrl: './results.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 
 export class ResultsComponent extends BaseComponent {

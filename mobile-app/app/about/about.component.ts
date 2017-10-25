@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page';
 import * as utils from 'tns-core-modules/utils/utils'
 import { RouterExtensions } from 'nativescript-angular/router';
@@ -8,7 +8,8 @@ import { BaseComponent } from '../common/base.component';
     selector: 'about',
     moduleId: module.id,
     styleUrls: ['./about.component.css'],
-    templateUrl: 'about.component.html'
+    templateUrl: 'about.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 
 export class AboutComponent extends BaseComponent {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { AndroidApplication, AndroidActivityBackPressedEventData } from "application";
 import { isAndroid } from "platform";
 import * as application from "application";
@@ -13,7 +13,8 @@ import { QuizService, QuizAnswer } from '../common/services/quiz.service';
     selector: 'Quiz',
     moduleId: module.id,
     styleUrls: ['./quiz.component.css'],
-    templateUrl: './quiz.component.html'
+    templateUrl: './quiz.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 
 export class QuizComponent extends BaseComponent {
@@ -24,7 +25,8 @@ export class QuizComponent extends BaseComponent {
     constructor(
         protected page: Page,
         protected routerExtensions: RouterExtensions,
-        public quizService: QuizService
+        public quizService: QuizService,
+        private changeDetectorRef: ChangeDetectorRef
     ) {
         super(page);
         // sobreescribimos el "Back" para pedirle confirmación, ya que hacerlo
@@ -67,6 +69,7 @@ export class QuizComponent extends BaseComponent {
             this.lastAnswerIndex = idx;
             let result: QuizAnswer = this.quizService.answer(idx);
             this.state = this.quizService.isLastQuestion() ? QuizState.FINISHED : QuizState.QUESTION_ANSWERED;
+            this.changeDetectorRef.markForCheck();
         }
     }
 
@@ -75,6 +78,7 @@ export class QuizComponent extends BaseComponent {
             this.quizService.nextQuestion();
             this.state = QuizState.QUESTION_IN_PROGRESS;
             this.lastAnswerIndex = null;
+            this.changeDetectorRef.markForCheck();
         }
     }
 

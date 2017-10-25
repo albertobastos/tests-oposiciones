@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
 import { RouterExtensions } from 'nativescript-angular/router';
 import { Page } from 'tns-core-modules/ui/page';
 import { BaseComponent } from '../common/base.component';
@@ -8,7 +8,8 @@ import { QuizService } from '../common/services/quiz.service';
     selector: "Home",
     moduleId: module.id,
     styleUrls: ["./home.component.css"],
-    templateUrl: "./home.component.html"
+    templateUrl: "./home.component.html",
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HomeComponent extends BaseComponent implements OnInit {
 
@@ -23,7 +24,7 @@ export class HomeComponent extends BaseComponent implements OnInit {
 
     ngOnInit() {
         //this._devel_gotoQuiz();
-        this._devel_gotoSettings();
+        //this._devel_gotoSettings();
         //this._devel_gotoResults();
         //this._devel_gotoAbout();
     }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { Page } from 'tns-core-modules/ui/page';
 import { RouterExtensions } from 'nativescript-angular/router';
 import { BaseComponent } from '../common/base.component';
@@ -8,7 +8,8 @@ import { ConfigService } from '../common/services/config.service';
     selector: 'settings',
     moduleId: module.id,
     styleUrls: ['./settings.component.css'],
-    templateUrl: './settings.component.html'
+    templateUrl: './settings.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 
 export class SettingsComponent extends BaseComponent {
@@ -18,7 +19,8 @@ export class SettingsComponent extends BaseComponent {
     constructor(
         protected page: Page,
         public routerExtensions: RouterExtensions,
-        public configService: ConfigService
+        public configService: ConfigService,
+        public changeDetectorRef: ChangeDetectorRef
     ) { 
         super(page);
         this.allSections = this.configService.getAllSections();
@@ -34,6 +36,7 @@ export class SettingsComponent extends BaseComponent {
 
     set questionsAmount(amount: number) {
         this.configService.setQuestionsAmount(amount);
+        this.changeDetectorRef.markForCheck();
     }
 
     isAmount(amount: number): boolean {
@@ -54,6 +57,7 @@ export class SettingsComponent extends BaseComponent {
             tmp.push(section);
         }
         this.configService.setSections(tmp);
+        this.changeDetectorRef.markForCheck();
     }
 
 }

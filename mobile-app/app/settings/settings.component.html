@@ -3,9 +3,11 @@
 </ActionBar>
 <StackLayout>
     <StackLayout>
+        <StackLayout class="setting title">
+            <Label text="Preguntas por test"></Label>
+        </StackLayout>
         <StackLayout class="setting">
-            <Label class="setting-title" text="Preguntas por test"></Label>
-            <WrapLayout>
+                <WrapLayout>
                 <Button 
                     *ngFor="let amount of configService.getAllQuestionsAmounts()" 
                     class="setting-questions"
@@ -16,8 +18,10 @@
                 ></Button>
             </WrapLayout>
         </StackLayout>
+        <StackLayout class="setting title">
+            <Label text="Secciones incluídas"></Label>
+        </StackLayout>
         <StackLayout class="setting">
-            <Label class="setting-title" text="Secciones incluídas"></Label>
             <ListView [items]="allSections" (itemTap)="toggleSection($event)">
                 <ng-template let-section="item">
                     <GridLayout class="setting-section" columns="auto,*" rows="auto">

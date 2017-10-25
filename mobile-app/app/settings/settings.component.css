@@ -1,8 +1,13 @@
 .setting {
     padding: 10px;
 }
-.setting-title {
-    text-align: left;
+
+.setting.title {
+    background-color: rgb(132, 83, 0, .5);
+}
+
+.setting.title Label {
+    text-align: center;
     font-weight: bold;
 }
 

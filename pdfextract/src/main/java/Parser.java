@@ -15,7 +15,13 @@ import java.util.regex.Pattern;
 public class Parser {
 
     List<String> ANSWER_INDEXES = Arrays.asList("A", "B", "C", "D");
-    List<String> BANNED_QUESTIONS = Arrays.asList("712", "900", "944"); // questions that cannot be included for several reasons (out of context, repeated answers...)
+    List<String> BANNED_QUESTIONS = Arrays.asList( // questions that cannot be included for several reasons (out of context, repeated answers...)
+            "600",  // no question text!
+            "691",  // no question text!
+            "712",  // question cannot be understood without the previous one
+            "900",  // repeated answer
+            "944"   // repeated answer
+    );
 
     public static void main(String[] args) throws Exception {
         //String outPath = System.getProperty("user.home") + File.separator + "preguntas_" + new Date().getTime() + ".json";
@@ -45,7 +51,7 @@ public class Parser {
         final String[] currentSectionTitle = new String[] { null };
 
         final MatchType[] whatWasLast = new MatchType[] { null };
-        Pattern pattern_questionText = Pattern.compile("^([0-9]+)\\.-\\s(.*)$");
+        Pattern pattern_questionText = Pattern.compile("^([0-9]+)\\.-(.*)$");
         Pattern pattern_answer = Pattern.compile("^[abcd]\\)\\s(.*)$");
         Pattern pattern_blankLine = Pattern.compile("^(\\s)*$");
         Pattern pattern_solution = Pattern.compile("^(Respuestas:)?\\s*([0-9]+)\\.-\\s([ABCD])(\\s)*$");

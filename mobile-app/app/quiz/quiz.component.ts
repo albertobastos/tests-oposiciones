@@ -52,16 +52,23 @@ export class QuizComponent extends BaseComponent {
         return this.quizService.currentQuestion;
     }
 
-    getAnswerClass(idx: number): string {
-        let clazz = '';
+    getAnswerClass(idx: number): string[] {
+        let classes = [];
+        let length = this.current.answers[idx].length;
+        if(length > 250) {
+            classes.push('verylong');
+        } else if(length > 200) {
+            classes.push('long');
+        }
+
         if(this.isQuestionAnswered) {
             if(this.current.rightAnswerIndex === idx) {
-                clazz = 'right-answer';
+                classes.push('right-answer');
             } else if(this.lastAnswerIndex === idx) {
-                clazz = 'wrong-answer';
+                classes.push('wrong-answer');
             }
         }
-        return clazz;
+        return classes;
     }
 
     sendAnswer(idx: number) {

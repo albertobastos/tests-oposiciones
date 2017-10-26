@@ -52,6 +52,10 @@ export class QuizComponent extends BaseComponent {
         return this.quizService.currentQuestion;
     }
 
+    getAnswerHeight(idx: number): string {
+        return Math.ceil(100 / this.current.answers.length) + '%';
+    }
+
     getAnswerClass(idx: number): string[] {
         let classes = [];
         let length = this.current.answers[idx].length;
@@ -89,11 +93,23 @@ export class QuizComponent extends BaseComponent {
         }
     }
 
+    showQuestionNumber() {
+        dialogs.alert({
+            title: '',
+            message: `Pregunta: #${this.current.number}\nSección: ${this.current.sectionTitle}`,
+            cancelable: true,
+            okButtonText: 'OK'
+        });
+    }
+
     goBack(data: AndroidActivityBackPressedEventData) {
         data && (data.cancel = true);
-        dialogs.confirm(
-            'Todo tu progreso en el test actual se perderá. ¿Seguro que quieres salir?'
-        ).then(result => result && this.routerExtensions.back());
+        dialogs.confirm({
+            title: 'Abandonar test',
+            cancelButtonText: 'Cancelar',
+            okButtonText: 'Salir',
+            message: 'Todo tu progreso en el test actual se perderá. ¿Seguro que quieres salir?'
+        }).then(result => result && this.routerExtensions.back());
     }
 
     goToResults() {

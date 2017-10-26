@@ -2,18 +2,14 @@
     <NavigationButton text="Salir" android.systemIcon="ic_menu_back" (tap)="goBack(null)"></NavigationButton>
 </ActionBar>
 <GridLayout columns="*" rows="auto,auto,*,auto">
-    <DockLayout class="question-info" col="0" row="0">
-        <Label class="number" dock="left" [text]="'#' + current.number"></Label>
-        <Label class="count" dock="right" [text]="quizService.currentQuestionNumber + '/' + quizService.totalQuestions"></Label>
-    </DockLayout>
-    <StackLayout class="question-text" col="0" row="1">
+    <StackLayout class="quiz-progress" col="0" row="0">
+        <Progress [value]="quizService.totalAnswers" [maxValue]="quizService.totalQuestions"></Progress>
+    </StackLayout>
+    <StackLayout class="question-text" col="0" row="1" horizontalAlignment="center" (tap)="showQuestionNumber()">
         <Label textWrap="true" [text]="current.question"></Label>
     </StackLayout>
-    <!--StackLayout class="blank-wrap" col="0" row="2">
-        <Label [text]="stateText"></Label>
-    </StackLayout-->
     <StackLayout col="0" row="2" class="answers">
-        <Button height="25%" *ngFor="let answer of current.answers;let i = index;" [ngClass]="getAnswerClass(i)" [text]="answer" (tap)="sendAnswer(i)"></Button>
+        <Button [height]="getAnswerHeight(i)" *ngFor="let answer of current.answers;let i = index;" [ngClass]="getAnswerClass(i)" [text]="answer" (tap)="sendAnswer(i)"></Button>
     </StackLayout>
     <StackLayout class="bottom-actions" col="0" row="3">
         <Button *ngIf="isQuizFinished" text="Ver resultados" (tap)="goToResults()"></Button>

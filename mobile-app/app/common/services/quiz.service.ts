@@ -61,6 +61,10 @@ export class QuizService {
         return this._questions.length;
     }
 
+    get totalAnswers(): number {
+        return this._answers.filter(ans => ans !== QuizAnswer.UNANSWERED).length;
+    }
+
     get totalRightAnswers(): number {
         return this._answers.filter(ans => ans === QuizAnswer.RIGHT).length;
     }

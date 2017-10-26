@@ -1,27 +1,22 @@
-.question-info {
-    color: #666;
-}
-.question-info .number {
-    padding: 20px;
-}
-.question-info .count {
-    padding: 20px;
-    text-align: right;
+.quiz-progress {
+    margin: 0;
+    height: 3;
+    padding: 0;
 }
 
 .question-text {
-    background-color: white;
+    width: 95%;
     opacity: 0.8;
-    border-width: 3px 0 3px 0;
+    background-color: white;
+    border-width: 0 3px 3px 3px;
     border-color:  #845400;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
     margin-top: 0;
 }
 
-.blank-wrap {
-    vertical-align: middle;
-    text-align: center;
-    color: #666;
+.answers {
+    padding: 0;
+    margin: 0;
 }
 
 .answers Button {

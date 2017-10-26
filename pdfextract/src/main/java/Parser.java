@@ -83,7 +83,7 @@ public class Parser {
                     Question q = new Question();
                     q.setSectionTitle(currentSectionTitle[0]);
                     q.setNumber(matcher.group(1));
-                    q.setQuestion(matcher.group(2));
+                    q.setQuestion(matcher.group(2).trim());
                     q.setAnswers(new ArrayList<String>());
                     res.add(q);
                     whatWasLast[0] = MatchType.QUESTION;

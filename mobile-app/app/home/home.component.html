@@ -1,8 +1,12 @@
 <AbsoluteLayout>
     <Image left="10" top="40" width="30" height="30" src="res://info" [nsRouterLink]="['/about']"></Image>
 </AbsoluteLayout>
-<StackLayout verticalAlignment="center" horizontalAligment="center">
-    <Image src="res://logo"></Image>
-    <Button text="Ajustes" [nsRouterLink]="['/settings']"></Button>
-    <Button text="Comenzar" (tap)="startQuiz()"></Button>
-</StackLayout>
+<GridLayout columns="*" rows="*, auto">
+    <StackLayout col="0" row="0" verticalAlignment="center" horizontalAligment="center">
+        <Image src="res://logo"></Image>
+    </StackLayout>
+    <StackLayout col="0" row="1" horizontalAligment="center">
+        <Button text="Ajustes" [nsRouterLink]="['/settings']"></Button>
+        <Button text="Comenzar" (tap)="startQuiz()"></Button>
+    </StackLayout>
+</GridLayout>

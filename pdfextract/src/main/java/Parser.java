@@ -124,11 +124,18 @@ public class Parser {
             });
         }
 
+		fixWrongAnswers(rightAnswers);
         fillAndCheckQuestionsAndAnswers(res, rightAnswers);
 
         return res;
     }
 
+	private void fixWrongAnswers(Map<String, Integer> rightAnswers) {
+		// 145 - El estado es aconfesional, no católico
+		rightAnswers.put("145", ANSWER_INDEXES.indexOf("D"));
+		// more fixes here...
+	}
+	
     private void fillAndCheckQuestionsAndAnswers(List<Question> questions, Map<String, Integer> rightAnswers) {
         for(Iterator<Question> it = questions.iterator();it.hasNext();) {
             Question q = it.next();

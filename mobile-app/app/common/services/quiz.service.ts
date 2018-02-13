@@ -80,7 +80,7 @@ export class QuizService {
     getQuizMark(): number {
         // 1 wrong answer ==> -25% right answer
         let markPerRightAnswer = 10 / this.totalQuestions;
-        let markPerWrongAnswer = -0.25 * markPerRightAnswer;
+        let markPerWrongAnswer = -1/3 * markPerRightAnswer;
         return this.totalRightAnswers * markPerRightAnswer + this.totalWrongAnswers * markPerWrongAnswer;
     }
 

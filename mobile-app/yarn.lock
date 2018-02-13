@@ -2086,10 +2086,6 @@ nativescript-angular@4.2.0:
     nativescript-intl "^3.0.0"
     reflect-metadata "^0.1.8"
 
-nativescript-checkbox@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/nativescript-checkbox/-/nativescript-checkbox-3.0.1.tgz#97c9169b2c20d08a421bb14d761e3bcd9da88c09"
-
 nativescript-css-loader@~0.26.0:
   version "0.26.1"
   resolved "https://registry.yarnpkg.com/nativescript-css-loader/-/nativescript-css-loader-0.26.1.tgz#2e809bba43cb6c03a97da4902598ec83b113f808"

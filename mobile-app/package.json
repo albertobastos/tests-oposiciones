@@ -53,6 +53,6 @@
     "start-ios-bundle": "npm run ns-bundle --ios --run-app",
     "build-android-bundle": "npm run ns-bundle --android --build-app",
     "build-ios-bundle": "npm run ns-bundle --ios --build-app",
-    "release-android": "npm run ns-bundle --android --build-app --key-store-path developer_android.keystore --key-store-password <your-key-store-password>"
+    "release-android": "npm run build-android-bundle -- --release --key-store-path developer_android.keystore --key-store-password <password> --key-store-alias albertobastos --key-store-alias-password <password>"
   }
 }

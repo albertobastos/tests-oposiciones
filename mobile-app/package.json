@@ -51,7 +51,7 @@
   "scripts": {
     "ns-bundle": "ns-bundle",
     "run-android": "tns run android",
-    "build-android": "tns run android --bundle --env.aot --env.uglify --env.snapshot",
+    "build-android": "tns build android --bundle --env.aot --env.uglify --env.snapshot",
     "release-android": "npm run build-android -- --release --key-store-path developer_android.keystore --key-store-password <password> --key-store-alias albertobastos --key-store-alias-password <password>"
   }
 }

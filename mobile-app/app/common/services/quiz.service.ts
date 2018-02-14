@@ -81,7 +81,9 @@ export class QuizService {
         // 1 wrong answer ==> -25% right answer
         let markPerRightAnswer = 10 / this.totalQuestions;
         let markPerWrongAnswer = -1/3 * markPerRightAnswer;
-        return this.totalRightAnswers * markPerRightAnswer + this.totalWrongAnswers * markPerWrongAnswer;
+        let quizMark = this.totalRightAnswers * markPerRightAnswer + this.totalWrongAnswers * markPerWrongAnswer;
+        quizMark = Math.round(quizMark * 100) / 100; // round up to 2 decimal places
+        return quizMark;
     }
 
 }

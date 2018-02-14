@@ -20,7 +20,9 @@ public class Parser {
             "691",  // no question text!
             "712",  // question cannot be understood without the previous one
             "900",  // repeated answer
-            "944"   // repeated answer
+            "944",  // repeated answer
+			"813",	// repeated question
+			"765", "790" // same question and both have wrong answers (¡Siete vocales!)
     );
 
     public static void main(String[] args) throws Exception {

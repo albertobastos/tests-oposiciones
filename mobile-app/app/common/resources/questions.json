@@ -4853,12 +4853,6 @@
   "answers" : [ "Diez.", "Doce.", "Seis.", "Todos." ],
   "rightAnswerIndex" : 1
 }, {
-  "number" : "813",
-  "sectionTitle" : "Título VI: Del Poder Judicial",
-  "question" : "¿Quién representa al Consejo General del Poder Judicial?:",
-  "answers" : [ "El Presidente", "El Vicepresidente", "El Pleno", "La Comisión Permanente" ],
-  "rightAnswerIndex" : 0
-}, {
   "number" : "814",
   "sectionTitle" : "Título VI: Del Poder Judicial",
   "question" : "¿Cuál es el número de vocales que componen la Comisión de Estudios e Informes del Consejo General del Poder Judicial?",

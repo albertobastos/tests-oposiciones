@@ -1,0 +1,14 @@
+1.0
+
+¡Versión inicial!
+
+1.0.1
+
+Arreglada pregunta #145
+Modificado cálculo de puntuación (3 errores = -1 acierto)
+
+1.0.2
+
+Redondeada nota final a dos decimales
+Eliminada pregunta #813 (es idéntica a la #755)
+Eliminadas preguntas #765 y #790 (no existe la opción correcta, siete vocales)

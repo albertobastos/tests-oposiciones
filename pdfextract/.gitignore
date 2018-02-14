@@ -2,3 +2,4 @@
 *.iml
 *.class
 target/
+mobile-app/report/*
